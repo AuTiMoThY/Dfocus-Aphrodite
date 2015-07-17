@@ -1,0 +1,85 @@
+#top {
+	@include wh(100%, 10px);
+	@include bg(#000);
+}
+
+/*========================================================================*\
+		>>	global_hd  quick_bar  logo
+\*========================================================================*/
+header {
+	&.global_hd {
+		@include wh(100%, 90px);
+		@include background-image(linear-gradient(#00a1e9, #0086d1));
+		nav {
+			margin-left: 35%;
+			margin-right: 1%;
+		}
+	}// header.global_hd  END
+	&.quick_bar {
+		@include wh(100%, 45px - 1px);
+		@include bg(#dcdddd);
+		&:after {
+			@include psudoClass;
+			@include wh(100%, 1px);
+			@include bg(darken(#dcdddd, 20%));
+		}
+	}// header.quick_bar  END
+	&#logo {
+		// @include wh(logo, png);
+		position: absolute;
+		top: 0;
+		// right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		a {
+			@include wh;
+			display: block;
+		}
+	}// header#logo  END
+}
+/*========================================================================*\
+		>>	main_nav
+\*========================================================================*/
+.main_nav {
+	height: 100%;
+	// position: relative;
+	ul {
+		height: 100%;
+	}
+	&-item {
+		@include VerticalAlign;
+
+		a, span {
+			display: block;
+			text-align: center;
+		}
+		@each $navItem, $x, $y in (item1, 0, -51px),
+									   (item2, -79px, -51px),
+									   (item3, -155px, -51px),
+									   (item4, -243px, -51px),
+									   (item5, -358px, -51px),
+									   (item6, -485px, -51px) {
+			&.#{$navItem}:hover .main_nav-icon {
+				// @include bg('navIcon.png', $x, $y);
+			}
+		}
+	}// .main_nav-item  END
+	&-icon {
+		height: 31px;
+		margin-bottom: 0.5em;
+		// @include transition(all 0.3s $easeInOutCubic);
+		@each $navItem, $w, $x, $y in (item1, 34px, 0, 0),
+									  (item2, 37px, -79px, 0),
+									  (item3, 43px, -155px, 0),
+									  (item4, 69px, -243px, 0),
+									  (item5, 78px, -358px, 0),
+									  (item6, 53px, -485px, 0) {
+			.#{$navItem} & {
+				width: #{$w};
+				// @include bg('navIcon.png', $x, $y);
+			}
+		}
+	}// .main_nav-icon  END
+}
+

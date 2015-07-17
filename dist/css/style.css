@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/******************************************/
+/*		DFocus
+/*			by DFocus AuTiMoThY
+/******************************************/
+/*
+* TOC
+*
+* _Initial
+* _Layout
+* btn
+* form input textarea
+* loading
+* Header
+* Footer
+* nav
+* banner
+* mod
+* AsideMod
+* page
+* font
+* icon
+* skrollr
+*/
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+@font-face {
+  font-family: "FutuLt";
+  src: url('fonts/FuturaBT-Light.eot?1427879192') format('embedded-opentype'), url('fonts/FutuLt.ttf?1003415360') format('truetype'), url('fonts/FutuLt.woff?1400676968') format('woff');
+}
+/*------------------------------------------------------------------------*\
+/*------------------------------------------------------------------------*\
+/*------------------------------------------------------------------------*\
+		>	_Initial
+\*------------------------------------------------------------------------*/
+.hide_txt {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.wrapper {
+  width: 1370px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.well {
+  width: 1370px;
+  margin: auto;
+  position: relative;
+}
+
+html, body {
+  min-height: 100%;
+  min-width: 1370px;
+}
+
+body {
+  font-family: "Microsoft JhengHei", "微軟正黑體", \5FAE\x8F6F\6B63\9ED1\4F53, Arial, "Helvetica Neue", Helvetica;
+}
+
+.pic {
+  width: 100%;
+  overflow: hidden;
+}
+.pic img {
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.temporary {
+  display: block;
+  margin: 0 auto;
+}
+
+.ib {
+  display: inline-block;
+  vertical-align: middle !important;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+.col-3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+}
+
+.col-4 {
+  display: inline-block;
+  vertical-align: top;
+  width: 24.9%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.2125em;
+  letter-spacing: 2px;
+}
+
+p {
+  line-height: 1.6;
+  /*margin-bottom:1.25em;*/
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.hide, .hidden {
+  display: none;
+}
+
+ul, ol, dl {
+  list-style-position: outside;
+}
+
+dl dt {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+dl dd {
+  margin-bottom: 0.75em;
+}
+
+/*========================================================================*\
+		test
+\*========================================================================*/
+.tdlt {
+  text-decoration: line-through;
+}
+
+.swing {
+  -webkit-transform-origin: 50% 80%;
+  -ms-transform-origin: 50% 80%;
+  transform-origin: 50% 80%;
+}
+
+.tri {
+  display: inline-block;
+}
+
+/*------------------------------------------------------------------------*\
+/*------------------------------------------------------------------------*\
+/*========================================================================*\
+		>	_Layout
+\*========================================================================*/
+/*========================================================================*\
+		>>	layout main
+\*========================================================================*/
+/*------------------------------------------------------------------------*\
+/*------------------------------------------------------------------------*\
+/*========================================================================*\
+		>	btn
+\*========================================================================*/
+button {
+  position: relative;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1;
+  outline: none;
+}
+button.btn {
+  border: none;
+  background: none;
+}
+
+.btn {
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  /*========================================================================*\
+  		project 
+  \*========================================================================*/
+}
+.btn a, .btn input, .btn button {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  background: none;
+}
+.btn input {
+  border: none;
+  background: none;
+}
+.btn:hover a, .btn:hover input {
+  color: #fff;
+}
+.btn:active {
+  -moz-transform: translate(1px, 1px);
+  -ms-transform: translate(1px, 1px);
+  -webkit-transform: translate(1px, 1px);
+  transform: translate(1px, 1px);
+}
+.btn-default.btn:hover {
+  background-color: #fee56e;
+}
+.btn-back {
+  display: table;
+  margin: 1em auto 0;
+  padding: 0.3em;
+  border: 1px solid #5c2113;
+  border-radius: 0;
+}
+.btn-back button {
+  width: 40px;
+  height: 13px;
+  background: url('../images/txts.png?1421477232') 0px 0px no-repeat;
+}
+.btn-back:hover {
+  background-color: #fee56e;
+}
+.btn-back.btn {
+  background-color: #fff;
+}
+.btn-send:hover {
+  background-color: #5c2113;
+}
+.btn-send:hover button {
+  color: #fff;
+}
+.btn-reset.btn:hover {
+  background-color: #727171;
+  border: 1px solid #727171;
+}
+.btn-reset.btn:hover button {
+  color: #fff;
+}
+
+/*------------------------------------------------------------------------*\
+/*------------------------------------------------------------------------*\
+/*========================================================================*\
+		>	Header
+\*========================================================================*/
+#top {
+  width: 100%;
+  height: 10px;
+  background-color: #000;
+}
+
+/*========================================================================*\
+		>>	global_hd  quick_bar  logo
+\*========================================================================*/
+header.global_hd {
+  width: 100%;
+  height: 90px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYTFlOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwODZkMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a1e9), color-stop(100%, #0086d1));
+  background-image: -moz-linear-gradient(#00a1e9, #0086d1);
+  background-image: -webkit-linear-gradient(#00a1e9, #0086d1);
+  background-image: linear-gradient(#00a1e9, #0086d1);
+}
+header.global_hd nav {
+  margin-left: 35%;
+  margin-right: 1%;
+}
+header.quick_bar {
+  width: 100%;
+  height: 44px;
+  background-color: #dcdddd;
+}
+header.quick_bar:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #a8abab;
+}
+header#logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+header#logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*========================================================================*\
+		>>	main_nav
+\*========================================================================*/
+.main_nav {
+  height: 100%;
+}
+.main_nav ul {
+  height: 100%;
+}
+.main_nav-item {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.main_nav-item a, .main_nav-item span {
+  display: block;
+  text-align: center;
+}
+.main_nav-icon {
+  height: 31px;
+  margin-bottom: 0.5em;
+}
+.item1 .main_nav-icon {
+  width: 34px;
+}
+.item2 .main_nav-icon {
+  width: 37px;
+}
+.item3 .main_nav-icon {
+  width: 43px;
+}
+.item4 .main_nav-icon {
+  width: 69px;
+}
+.item5 .main_nav-icon {
+  width: 78px;
+}
+.item6 .main_nav-icon {
+  width: 53px;
+}
+
+/*------------------------------------------------------------------------*\
+/*------------------------------------------------------------------------*\
+/*========================================================================*\
+		>	page
+\*========================================================================*/
+/*------------------------------------------------------------------------*\
+/*------------------------------------------------------------------------*\
+/*========================================================================*\
+		>	font
+\*========================================================================*/
+/*------------------------------------------------------------------------*\
+/*------------------------------------------------------------------------*\
+/*========================================================================*\
+		>	icon
+\*========================================================================*/
+button.icon {
+  margin: 0;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
