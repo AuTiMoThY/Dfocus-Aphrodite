@@ -28,4 +28,24 @@ sass/
 
 config.php
 index.php
+service.php
+service_cnt.php
+teams.php
+goddess.php
+goddess_cnt.php
+news.php
+contact.php
+
+
 ```
+
+## pages
+
+- 首頁            : index.php
+- 服務項目 - 列表 : service.php
+- 服務項目 - 內頁 : service_cnt.php
+- 醫療團隊        : teams.php
+- 女神案例 - 列表 : goddess.php
+- 女神案例 - 內頁 : goddess_cnt.php
+- 最新資訊        : news.php
+- 聯絡我們        : contact.php
