@@ -3,22 +3,22 @@
 			by DFocus AuTiMoThY
 \*--------------------------------------*/
 $(window).load(function(){
-	var flexslider = $('.flexslider');
-	if (flexslider.length) {
+	var bannerSlider = $('#bannerSlider');
+	if (bannerSlider.length) {
 
-		$('.flexslider').flexslider({
-			animation: "slide",
+		$('#bannerSlider').flexslider({
+			animation      : "fade",
+			controlNav     : true,
+			directionNav   : true,
+			slideshowSpeed : 5000,
 			easing: "easeInOutElastic",
 			animationLoop: true,
-			directionNav: false,
-			pauseOnAction: false,
-			slideshowSpeed: 5000,
 			// initDelay: 1000,
 			minItems: 1,
 			maxItems: 5,
-			itemMargin: 2,
+			// itemMargin: 2,
 	        // move:1102,
-	        controlsContainer: $('#hcarouselcontrols .well'),
+	        // controlsContainer: $('#hcarouselcontrols .well'),
 			init: function(){
 				// (function () {
 
@@ -85,7 +85,7 @@ $(window).load(function(){
 											onEndHeaderAnimation();
 										}
 									}
-								}, 350 );
+								}, 80 );
 						};
 
 						loader.setProgressFn( simulationFn );
@@ -99,7 +99,7 @@ $(window).load(function(){
 
 				// })();
 
-			}()
+			}
 		});
 	};
 
@@ -127,16 +127,22 @@ function viewPortWidthHeight() {
 }
 
 function resizeBlock (){
-	var $footerWrap = $("#footerWrap"),
-		$body = $("body"),
+	var $body = $("body"),
 		$slidesLi = $(".flexslider .slides > li"),
 		$indexPage = $("body.index_page"),
 		viewPortWH = viewPortWidthHeight(),
 		viewPortH = viewPortWH.height;
+	var indexh1 = ((viewPortH - 67) / viewPortH) * 100;
+	var bannerh = (768 / 904) * 100;
+	var sloganh = (136 / 904) * 100;
 
-	$footerWrap.height(viewPortH * 2 / 5);
-	$indexPage.css('height', viewPortH);
-	$slidesLi.css('height', viewPortH * 0.8);
+	var bannerh1 = ((indexh1 - sloganh) / indexh1) * 100;
+	var sloganh1 = indexh1 - bannerh1;
+
+	$("#sec1").css('height', viewPortH - 67);
+	$("#bannerSlider").css('height', bannerh + "%");
+	$("#indexSlogan").css('height', sloganh + "%");
+	// $slidesLi.css('height', viewPortH - 67 - );
 }
 
 
@@ -146,7 +152,10 @@ $(window).on('resize', function () {
 
 $(function () {
 	resizeBlock();
-
+	$("img#justfont-badge").css({
+		display: 'none',
+		opacity: '0'
+	});;
 	// if (!/*@cc_on!@*/false) {
 	// 	console.log('ie?');
 	// 	$.material.init('#ftCtrl');
@@ -161,16 +170,7 @@ $(function () {
 	}
 
 
-	$.preload( 'images/banner_about.jpg',
-	           'images/banner_product.jpg',
-	           'images/outthere-logo.svg',
-	           'images/navItem1.svg',
-	           'images/navItem2.svg',
-	           'images/navItem3.svg',
-	           'images/navItem4.svg',
-	           'images/navItem5.svg',
-	           'images/iconTxt.png'
-	);
+	$.preload();
 
 	$('#cntWra').css('height', $('#mainPage').height);
 
@@ -234,21 +234,9 @@ $(function () {
 			scroll = $this.scrollTop();
 
 		if (scroll>=200) {
-			$("#headerWrap").css('height', '8%');
-			$("nav.main_nav ul").css('bottom', '1em');
-			$(".logo").css({'height': '90%', 'position': 'relative', 'left': '-5%'});
-			$(".page_banner").css({
-				'background-attachment': 'fixed',
-				'background-position': '50% -80%'
-			});
+
 		}else {
-			$("#headerWrap").css('height', '');
-			$("nav.main_nav ul").css('bottom', '');
-			$(".logo").css({'height': '', 'position': '', 'left': ''});
-			$(".page_banner").css({
-				'background-attachment': '',
-				'background-position': ''
-			});
+
 		};
 	});
 

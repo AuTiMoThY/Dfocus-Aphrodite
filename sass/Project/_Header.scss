@@ -1,6 +1,6 @@
 #top {
-	@include wh(100%, 10px);
-	@include bg(#000);
+	@include wh(100%, 0px);
+	@include bg(#fff);
 }
 
 /*========================================================================*\
@@ -8,24 +8,35 @@
 \*========================================================================*/
 header {
 	&.global_hd {
-		@include wh(100%, 90px);
-		@include background-image(linear-gradient(#00a1e9, #0086d1));
-		nav {
-			margin-left: 35%;
-			margin-right: 1%;
-		}
-	}// header.global_hd  END
-	&.quick_bar {
-		@include wh(100%, 45px - 1px);
-		@include bg(#dcdddd);
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		@include wh(100%, 66);
+		background-color: #fff;
+		// @include background-image(linear-gradient(#00a1e9, #0086d1));
+		// nav {
+		// 	margin-left: 35%;
+		// 	margin-right: 1%;
+		// }
 		&:after {
 			@include psudoClass;
-			@include wh(100%, 1px);
-			@include bg(darken(#dcdddd, 20%));
+			@include wh2(100% 1);
+			background-color: $normal_color;
+			@include absolute($B:-1px, $L:0);
 		}
-	}// header.quick_bar  END
+	}// header.global_hd  END
+	// &.quick_bar {
+	// 	@include wh(100%, 45px - 1px);
+	// 	@include bg(#dcdddd);
+	// 	&:after {
+	// 		@include psudoClass;
+	// 		@include wh(100%, 1px);
+	// 		@include bg(darken(#dcdddd, 20%));
+	// 	}
+	// }// header.quick_bar  END
 	&#logo {
-		// @include wh(logo, png);
+		@include wh(227, 33);
 		position: absolute;
 		top: 0;
 		// right: 0;
@@ -42,14 +53,17 @@ header {
 		>>	main_nav
 \*========================================================================*/
 .main_nav {
+	float: right;
 	height: 100%;
 	// position: relative;
 	ul {
 		height: 100%;
+		// @include rotate(180deg);
 	}
 	&-item {
+		position: relative;
 		@include VerticalAlign;
-
+		// @include rotate(180deg);
 		a, span {
 			display: block;
 			text-align: center;
@@ -64,22 +78,37 @@ header {
 				// @include bg('navIcon.png', $x, $y);
 			}
 		}
-	}// .main_nav-item  END
-	&-icon {
-		height: 31px;
-		margin-bottom: 0.5em;
-		// @include transition(all 0.3s $easeInOutCubic);
-		@each $navItem, $w, $x, $y in (item1, 34px, 0, 0),
-									  (item2, 37px, -79px, 0),
-									  (item3, 43px, -155px, 0),
-									  (item4, 69px, -243px, 0),
-									  (item5, 78px, -358px, 0),
-									  (item6, 53px, -485px, 0) {
-			.#{$navItem} & {
-				width: #{$w};
-				// @include bg('navIcon.png', $x, $y);
+		a {
+			position: relative;
+			padding: 0 0.8em;
+		}
+		span.wrap {
+			// @include VerticalAlign;
+		}
+		&:hover {
+			.main_nav-txt {
+				color: #282828;
 			}
 		}
-	}// .main_nav-icon  END
+	}// .main_nav-item  END
+	&-txt {
+		color: $normal_color;
+	}
+	// &-icon {
+	// 	height: 31px;
+	// 	margin-bottom: 0.5em;
+	// 	// @include transition(all 0.3s $easeInOutCubic);
+	// 	@each $navItem, $w, $x, $y in (item1, 34px, 0, 0),
+	// 								  (item2, 37px, -79px, 0),
+	// 								  (item3, 43px, -155px, 0),
+	// 								  (item4, 69px, -243px, 0),
+	// 								  (item5, 78px, -358px, 0),
+	// 								  (item6, 53px, -485px, 0) {
+	// 		.#{$navItem} & {
+	// 			width: #{$w};
+	// 			// @include bg('navIcon.png', $x, $y);
+	// 		}
+	// 	}
+	// }// .main_nav-icon  END
 }
 

@@ -18,8 +18,7 @@
 <link rel="stylesheet" href="plugin/FlexSlider/flexslider.css" />
 
 <!-- <link rel="stylesheet" href="plugin/fancybox/jquery.fancybox.css" /> -->
-<!-- <link rel="stylesheet" href="plugin/FlexSlider/flexslider.css" /> -->
-<!-- <link rel="stylesheet" href="<?php //path_au('css'); ?>/effect2.css" /> -->
+<link rel="stylesheet" href="plugin/pathLoader/effect2.css" />
 
 <link rel="stylesheet" href="<?php path_au('css'); ?>style.css" />
 

@@ -27,27 +27,60 @@ $icon-layout: horizontal;
 // 	}
 // }
 
-// .txt {
-// 	&-fc1 {
-// 		color: color($colors, nor, font_c1);
-// 		font-size: em(15);
-// 		letter-spacing: 1px;
-// 	}
-// 	&-fc2 {
-// 		color: #3e3a39;
-// 	}
-// 	&-r {
-// 		color: #ff0000;
-// 	}
-// }
-// p.txt-fc1 {
-// 	margin-bottom: 3em;
-// }
-// .title-fc1 {
-// 	color: color($colors, nor, font_c1);
-// 	font-weight: bolder;
-// 	font-size: em(17);
-// }
+.txt {
+	&-w1 {
+		color: #fff;
+	}
+	&-ft1 {
+		color: #fff;
+		@include adjFontSize(12px, 0.8);
+	}
+	&-ft2 {
+		color: #fff;
+		font-weight: bold;
+		font-family: $normal_font4;
+		@include adjFontSize(18px, 1);
+		letter-spacing: 1px;
+	}
+	&-tw {
+
+	}
+}
+
+
+.news-title {
+	@include qualify('.index_news'){
+		color: #282828;
+		@include adjFontSize(16px, 1.6);
+	};
+}
+.news-time {
+	@include qualify('.index_news'){
+		color: $normal_color;
+		@include adjFontSize(16px, 1.6);
+	};
+}
+
+
+.link {
+	&-1 {
+		transition: all 0.3s $easeInOutCubic;
+		border-bottom: 1px solid rgba($normal_color, 0);
+		&:hover {
+			border-bottom: 1px solid rgba($normal_color, 1);
+		}
+		&:active {
+			@include hover;
+		}
+	}
+	&-2 {
+		@include linkeffect(#000);
+	}
+	&-3 {
+		@include linkeffect($normal_color);
+	}
+}
+
 
 
 // button.icon {
@@ -56,7 +89,10 @@ $icon-layout: horizontal;
 // }
 
 
-// .icon {
+.icon {
+	&-facebook {
+
+	}
 // 	&-playBtn {
 // 		@include wh2(75 76);
 // 		@include bg-i(0, 0);
@@ -84,5 +120,5 @@ $icon-layout: horizontal;
 // 		@include bg-i(-110, -41);
 // 	}
 
-// }
+}
 

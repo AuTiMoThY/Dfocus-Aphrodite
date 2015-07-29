@@ -8,6 +8,18 @@
 	@include wh($cnt_width, 100%);
 	margin: 0 auto;
 	position: relative;
+	&.s {
+		width: 980px;
+	}
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
 }
 .well {
 	width: $cnt_width;
@@ -17,13 +29,13 @@
 
 html, body {
 	min-height: 100%;
-	min-width: $cnt_width;
+	// min-width: $cnt_width;
 }
 
 body {
-	// @include bg('bg.jpg');
-	// @include background-size(cover);
-	// @include bg(scroll);
+	@include bg('bg.jpg');
+	@include background-size(cover);
+	@include bg(fixed);
 	font-family: $normal_font;
 }
 

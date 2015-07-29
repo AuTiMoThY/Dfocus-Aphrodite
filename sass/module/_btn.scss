@@ -77,6 +77,26 @@ button {
 /*========================================================================*\
 		project 
 \*========================================================================*/
+	&-aphrodite {
+		padding: 0 1em;
+		@include adjFontSize(13px);
+		border-radius: 12px;
+		transition: all 0.3s ease-in-out;
+		text-transform: uppercase;
+		&.btn.btn {
+			@include bg($normal_color);
+			color: #fff;
+			&:hover {
+				@include bg(darken($normal_color, 20%));
+			}
+		}
+		&:after {
+			@include psudoClass(dib);
+			@include triangle(right, #fff, 7px);
+			vertical-align: -0.3ex;
+			margin-left: 0.3em;
+		}
+	}
 	&-back {
 		display: table;
 		margin: 1em auto 0;
@@ -128,7 +148,7 @@ button {
 		
 	}
 	&-adm.btn.btn {
-		@include bg(color($colors, nor, 2));
+		@include bg($normal_color);
 		margin: 0;
 		padding: 0.3em 0.8em;
 	}
@@ -150,9 +170,9 @@ button {
 }
 
 .more_btn {
-	@include absolute($r:50px, $b:20px);
+	@include absolute($R:50px, $B:20px);
 	@include wh2(60 20);
-	@include bg(#ecce54);
+	@include bg($normal_color);
 	border: 1px solid #172934;
 	transition: all 0.1s ease-out;
 	a {

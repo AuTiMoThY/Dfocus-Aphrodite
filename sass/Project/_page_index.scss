@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.index_page {
+	.slogan {
+		background-color: #282828;
+	}
+}
+
+#bannerSlider {
+	margin-top: 67px;
+}
+
+#aphroditeLogo2 {
+	@include absolute($T:50%, $L:50%);
+	margin-left: -140px;
+	margin-top: (91/2)*-1px;
+	@include wh2(280 91);
+	fill: lighten(#000, 20%);
+	@for $i from 1 through 9 {
+		.path#{$i} {
+			@include animation(logo2 7s $i*0.25s ease-in-out infinite alternate);
+		}
+	}
+}
+
+.slogan {
+	.logo2 {
+		position: relative;
+		// height: 100%;
+		float: left;
+		width: 28%;
+		height: 100%;
+	}
+	&-txt {
+		// @include absolute();
+		float: left;
+		display: table;
+		width: (100-28)*1%;
+		height: 100%;
+		padding-left: 1em;
+		p {
+			color: #fff;
+			@include adjFontSize(15px);
+		}
+		a {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	&-more {
+		color: $normal_color;
+		&:after {
+			@include psudoClass(dib);
+			@include triangle(right, $normal_color, 7px);
+			vertical-align: -0.3ex;
+			margin-left: 0.3em;
+		}
+	}
+}
+
+/*========================================================================*\
+		>>	index_service
+\*========================================================================*/
+.index_service {
+	&-more {
+		display: table;
+		margin: 1.5em auto 0.5em;
+	}
+}
+
+/*========================================================================*\
+		>>	index_news
+\*========================================================================*/
+.index_news {
+	&-pic {
+		border: 1px solid $normal_color;
+	}
+	&-item {
+		float: none;
+		width: 100%;
+		border-bottom: 1px solid #dddede;
+		padding: 0 1%;
+		a {
+			width: 100%;
+			display: block;
+		}
+		&:hover {
+			background-color: lighten(mix($normal_color, #fff, $weight:50%), 10%);
+		}
+	}
+	.news-title, .news-time {
+		@include ib;
+	}
+	.news-title {
+		width: 80%;
+		@include ellipsis;
+	}
+	.news-time {
+		float: right;
+	}
+	&-more {
+		display: table;
+		float: right;
+		margin-top: 1em;
+	}
+}
+
+/*========================================================================*\
+		>>	index_showcase
+\*========================================================================*/
+.index_showcase {
+	&-item {
+		margin-bottom: 1.2em;
+	}
+	&-more {
+		display: table;
+		margin: auto;
+	}
+}

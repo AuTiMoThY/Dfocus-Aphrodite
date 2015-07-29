@@ -1,87 +1,86 @@
 <footer class="global_ft">
+<section class="contact_form bar">
 	<div class="wrapper">
-		<section class="affiliate col">
-			<div class="affiliate-block">
-				<!-- <p class="hide_txt">affiliate with</p> -->
-				<div class="pic"><img src="images/pic2.png" alt=""></div>
-			</div>
-		</section>
-		<section class="epaper col">
-			<div class="epaper-block">
-				<p><span class="hide_txt">馬上訂閱所有人都在關注的財金電子報！再也不要錯過賺錢熱訊！</span></p>
-				<form action="">
-					<input type="text" name="" id="" class="epaper-inp" placeholder="請輸入您的EMAIL">
-					<span class="btn btn-IPC"><input type="submit" name="" id="" class="epaper-ft-submit" value="SEND"></span>
-				</form>
-			</div>
-			<nav class="footer_nav">
-				<ul>
-				<?php footerNavAu(); ?>
-				<?php
-					// $mainNav = array(
-					// 				'首頁'        => $indexPageUrlAu,
-					// 				'書城'        => "index_bookShop.php",
-					// 				'課程'        => $webPageBuild,
-					// 				'財金觀點'    => $webPageBuild,
-					// 				'哈燒快訊'    => $webPageBuild,
-					// 				'我的IPC'     => $webPageBuild);
-					// $mainNavLen = 0;
-					// $mainNavLen ++;
-
-					// foreach ($mainNav as $item => $url) {
-				?>
-<!-- 					<li class="footer_nav-item nav-IPC item<?php //echo $mainNavLen; ?>">
-						<a href="<?php //echo $url; ?>">
-							<span class="wrap"><span class="footer_nav-icon"></span><span><?php //echo $item; ?></span></span>
-						</a>
-					</li> -->
-				<?php
-					// 	++$mainNavLen;
-					// }
-				?>
-
+		<div class="container">
+			
+		</div><!-- /.container  END  !! -->
+	</div><!-- /.wrapper  END  !! -->
+</section><!-- /.contact_form  END  !! -->
+<section class="service_map bar">
+	<div class="wrapper">
+		<div class="container">
+			<div class="col-xs-6">
+				<h3>微整</h3>
+				<ul class="col-xs-3">
+<li><a href="">波尿酸</a></li>
+<li><a href="">3D聚左旋乳酸</a></li>
+<li><a href="">音波拉皮</a></li>
+<li><a href="">酷爾塑平</a></li>
 				</ul>
-			</nav>
-		</section>
-		<section class="sitemap col">
-			<nav class="cf">
-				<div class="col left small-4">
-					<section class="sitemap-seg">
-						<h2>寰宇財金網</h2>
-						<ul>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">關於寰宇</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">企業合作</a></li>
-						</ul>
-					</section>
+				<ul class="col-xs-3">
+<li><a href="">玫瑰拉提術</a></li>
+<li><a href="">酷爾塑平</a></li>
+<li><a href="">美白針</a></li>
+<li><a href="">杏仁酸換膚</a></li>
+				</ul>
+				<ul class="col-xs-3">
+<li><a href="">LPG纖體雕塑</a></li>
+<li><a href="">飛梭雷射</a></li>
+<li><a href="">G緊雷射</a></li>
+				</ul>
+				<ul class="col-xs-3">
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6">
+				<h3>整形外科</h3>
+				<ul class="col-xs-3">
+<li><a href="">【眼部】割</a></li>
+<li><a href="">【眼部】縫</a></li>
+<li><a href="">【眼部】迷你切割</a></li>
+<li><a href="">【眼部】眼袋</a></li>
+				</ul>
+				<ul class="col-xs-3">
+<li><a href="">【鼻】韓式</a></li>
+<li><a href="">【鼻】GOTEX</a></li>
+<li><a href="">【鼻】自體軟骨</a></li>
+<li><a href="">【拉皮】內視鏡</a></li>
+				</ul>
+				<ul class="col-xs-3">
+<li><a href="">【拉皮】5爪8爪</a></li>
+<li><a href="">【胸部】自體</a></li>
+<li><a href="">【胸部】內視果凍</a></li>
+				</ul>
+				<ul class="col-xs-3">
+<li><a href="">【抽脂】</a></li>
+<li><a href="">【美腿】</a></li>
+				</ul>
+			</div>
+		</div><!-- /.container  END  !! -->
+	</div><!-- /.wrapper  END  !! -->
+</section>
+<section class="other_inf">
+	<div class="wrapper">
+		<div class="container">
+			<div class="copyright ib">
+				<div class="logo ib">
+					<?php include("dist/images/aphrodite-logo.svg"); ?>
 				</div>
-				<div class="col left small-4">
-					<section class="sitemap-seg">
-						<h2>財金人物</h2>
-						<ul>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">達人專區</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">講師專區</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">作者專區</a></li>
-						</ul>
-					</section>
+				<div class="txt-ft1 ib">
+					©2015 Aphordite Plastic Clinic All Rights Reserved<br>最佳瀏覽環境chome,safari,firefox或IE10以上
 				</div>
-				<div class="col left small-4">
-					<section class="sitemap-seg">
-						<h2>顧客服務</h2>
-						<ul>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">連絡我們</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">相關連結</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">常見問題</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">購買據點</a></li>
-						</ul>
-					</section>
-				</div>
-			</nav>
-		</section>
-	</div>
-</footer>
-<footer class="copyright">
-	<div class="wrapper cf">
-		<p class="left">Copyright ©2014 IPC寰宇財金網版權所有 All Rights Reserved.</p>
-		<p class="right">Designed by <a href="http://ecmd.com.tw/" target="_blank">DFOCUS</a></p>
-	</div>
-</footer>
+			</div>
+			<div class="social_link ib">
+				<a href="#" class="icon-facebook col"></a>
+				<a href="#" class="icon-pixnet col"></a>
+				<a href="#" class="icon-line col"></a>
+			</div>
+			<div class="phone ib">
+				<span class="txt-ft2"><span class="txt-tw">免付費專線</span>:0800-000-488</span>
+				<span class="txt-ft2"><i class="icon-phone"></i>:02-27526931</span>
+				<span class="txt-ft2"><span class="txt-tw">營業時間</span>:12:00~17:00</span>
+			</div>
+		</div><!-- /.container  END  !! -->
+	</div><!-- /.wrapper  END  !! -->
+</section>
+</footer><!-- /.global_ft  END  !! -->

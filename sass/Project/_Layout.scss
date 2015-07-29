@@ -3,3 +3,16 @@
 /*========================================================================*\
 		>>	layout main
 \*========================================================================*/
+section {
+	&.bar {
+		padding: 2.5em 0;
+	}
+	&.fullbg {
+		background-color: #fff;
+	}
+}
+
+#justfont-badge {
+	@include opacity(0);
+	display: none !important;
+}
