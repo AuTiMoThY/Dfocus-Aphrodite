@@ -11,6 +11,10 @@
 <script src="plugin/pathLoader/pathLoader.js"></script>
 <!-- <script src="plugin/pathLoader/main.js"></script> -->
 
+<script src="plugin/validation_engine/jquery.validationEngine.js"></script>
+<script src="plugin/validation_engine/jquery.validationEngine-zh_TW.js"></script>
+
+
 <script src="plugin/FlexSlider/jquery.flexslider.js"></script>
 <script src="<?php path_au('js'); ?>au.js"></script>
 

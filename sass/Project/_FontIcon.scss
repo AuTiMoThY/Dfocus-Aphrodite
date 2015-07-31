@@ -45,6 +45,9 @@ $icon-layout: horizontal;
 	&-tw {
 
 	}
+	&-fc1 {
+		color: $normal_color;
+	}
 }
 
 
@@ -91,7 +94,20 @@ $icon-layout: horizontal;
 
 .icon {
 	&-facebook {
-
+		@include wh2(95 28);
+		@include bg-i(0, 0);
+	}
+	&-pixnet {
+		@include wh2(61 28);
+		@include bg-i(-96, 0);
+	}
+	&-line {
+		@include wh2(29 28);
+		@include bg-i(-158, 0);
+	}
+	&-phone {
+		@include wh2(20 16);
+		@include bg-i(-189, 0);
 	}
 // 	&-playBtn {
 // 		@include wh2(75 76);

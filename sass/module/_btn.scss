@@ -96,6 +96,12 @@ button {
 			vertical-align: -0.3ex;
 			margin-left: 0.3em;
 		}
+		.contact_form & {
+			padding: 0 1.8em;
+			&:after {
+				display: none;
+			}
+		}
 	}
 	&-back {
 		display: table;

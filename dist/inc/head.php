@@ -19,6 +19,7 @@
 
 <!-- <link rel="stylesheet" href="plugin/fancybox/jquery.fancybox.css" /> -->
 <link rel="stylesheet" href="plugin/pathLoader/effect2.css" />
+<link rel="stylesheet" href="plugin/validation_engine/validationEngine.jquery.css" />
 
 <link rel="stylesheet" href="<?php path_au('css'); ?>style.css" />
 

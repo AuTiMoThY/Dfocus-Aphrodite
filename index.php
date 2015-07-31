@@ -4,7 +4,7 @@
 	require_once INC_PATH.'aunav.php';
 
 
-//  最新消息  封面照片
+//  最新消息區塊  封面照片  切換圖片用
 $count = 6;
 $news_pic_array = array(
 array('pic'=>'dist/images/temp/tem-pic5.jpg'),
@@ -47,6 +47,11 @@ main img {
 </head>
 
 <body class="index_page">
+<?php
+//Line 彈出框
+	include_once INC_PATH.'line_popup.php';
+ ?>
+
 
 <div id="ip-container" class="ip-container">
 	<header class="ip-header">
@@ -150,7 +155,7 @@ main img {
 				</li>
 			</ul><!-- /.container  END  !! -->
 			<div class="index_service-more">
-				<div class="btn btn-aphrodite">MORE SERVICE</div>
+				<div class="btn btn-aphrodite"><a href="">MORE SERVICE</a></div>
 			</div>
 		</div><!-- /.wrapper  END  !! -->
 	</section>
@@ -190,7 +195,7 @@ main img {
 						</a></li>
 					</ul>
 					<div class="index_news-more">
-						<div class="btn btn-aphrodite">MORE NEWS</div>
+						<div class="btn btn-aphrodite"><a href="">MORE NEWS</a></div>
 					</div>
 				</div>
 			</div><!-- /.container  END  !! -->
@@ -282,12 +287,11 @@ main img {
 					</li>
 				</ul>
 				<div class="index_showcase-more">
-					<div class="btn btn-aphrodite">showcase</div>
+					<div class="btn btn-aphrodite"><a href="">showcase</a></div>
 				</div>
 			</div><!-- /.container  END  !! -->
 		</div><!-- /.wrapper  END  !! -->
 	</section>
-	<img src="<?php echo TEMP_PATH; ?>sec5.jpg" alt="">
 </main>
 
 <?php

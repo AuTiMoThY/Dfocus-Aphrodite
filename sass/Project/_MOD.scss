@@ -49,8 +49,9 @@
 		&-h2 {
 			color: #282828;
 			@include adjFontSize(12px);
-			font-family: $normal_font3;
-			letter-spacing: 4px;
+			font-family: $ff-Helvetica;
+			font-weight: 600;
+			letter-spacing: 2px;
 		}
 		&-go {
 			@include absolute($R:-45px, $B:-45px);
