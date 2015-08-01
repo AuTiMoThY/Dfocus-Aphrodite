@@ -3,8 +3,8 @@
 //  include_once INC_PATH.'fbscript.php';
  ?>
 
+<div id="top"></div>
 <header class="global_hd">
-	<div id="top"></div>
 	<div class="wrapper">
 		<header id="logo" class="ib"><a href="<?php webPageUrlAu('index'); ?>" title="女神時尚診所首頁"><img src="dist/images/logo.png" alt=""></a></header>
 		<nav class="main_nav ib">

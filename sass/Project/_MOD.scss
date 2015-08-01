@@ -42,7 +42,7 @@
 		&-h1 {
 			color: #282828;
 			@include adjFontSize(33px);
-			font-family: "sourcehansans-sc";
+			font-family: "sourcehansans-tc";
 			-webkit-font-smoothing: antialiased;
 			text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
 		}
@@ -76,6 +76,9 @@
 				text-transform: uppercase;
 				@include adjFontSize(11px,1);
 			}
+		}
+		&.service_list-item {
+			@include margin-trailer(0.8);
 		}
 	}
 	&-block2 {
@@ -113,6 +116,18 @@
 		}
 		img {
 			@include transition(all 0.3s ease);
+		}
+		&.goddess_aside-now {
+			figure:hover {
+				box-shadow: none;
+				img {
+					@include scale(1);
+					@include opacity(1);
+				}
+			}
+		}
+		&.goddess_aside-item {
+			@include margin-trailer(0.6);
 		}
 	}
 }//.mod

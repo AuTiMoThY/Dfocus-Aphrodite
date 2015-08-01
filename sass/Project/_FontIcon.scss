@@ -28,8 +28,26 @@ $icon-layout: horizontal;
 // }
 
 .txt {
+	&-1 {
+		color: $normal_color1;
+		@include adjFontSize(14px, 1.2);
+	}
+	&-2 {
+		color: $normal_color1;
+		@include adjFontSize(14px, 1.4);
+	}
+	&-title1 {
+		color: $normal_color1;
+		@include adjFontSize(21px, 1.5);
+		font-family: $normal_font;
+		font-weight: 400;
+	}
 	&-w1 {
 		color: #fff;
+	}
+	&-w2 {
+		color: #fff;
+		@include adjFontSize(14px, 1.2);
 	}
 	&-ft1 {
 		color: #fff;
@@ -108,6 +126,16 @@ $icon-layout: horizontal;
 	&-phone {
 		@include wh2(20 16);
 		@include bg-i(-189, 0);
+	}
+	&-tri_left {
+		@include triangle(left, $normal_color, 8px);
+		margin-right: 0.6em;
+		display: inline-block;
+	}
+	&-tri_right {
+		@include triangle(right, #fff, 8px);
+		margin-left: 0.6em;
+		display: inline-block;
 	}
 // 	&-playBtn {
 // 		@include wh2(75 76);

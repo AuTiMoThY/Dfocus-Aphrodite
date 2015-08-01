@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+$teams_intro-txt-w: (675 / 1034) * 100%;
+$teams_intro-logo-w: 100% - $teams_intro-txt-w - 1%;
+.teams_intro {
+	background-color: #fff;
+	padding: em(50) em(73);
+	@include margin-trailer(1);
+	h2 {
+		width: 100%;
+		margin-top: 0;
+		border-bottom: 4px solid $normal_color;
+		font-family: $normal_font;
+		@include adjFontSize(21px);
+	}
+	.logo {
+		width: $teams_intro-logo-w;
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+	&-txt {
+		width: $teams_intro-txt-w;
+	}
+}
+
+/*------------------------------------------------------------------------*\
+		>>	meet_our_costumers
+\*------------------------------------------------------------------------*/
+$teams_pic-w: 220px;
+$teams_pic-h: 280px;
+.meet_our_costumers {
+	position: relative;
+	z-index: 10;
+	header {
+		@include rhythm-margins(1.2, 1.2);
+	}
+}
+.moc {
+	&-list {}
+	&-item {
+		position: relative;
+		@include wh2($teams_pic-w $teams_pic-h);
+		// border: 4px solid rgba(#fff, 0.2);
+		margin-left: ((1180 - ($teams_pic-w) * 5) / 4) * 1;
+		&:first-of-type {
+			margin-left: 0;
+		}
+		&:nth-of-type(3) {
+			// border: 4px solid rgba(#fff, 0.5);
+		}
+		figure {
+			position: relative;
+			@include wh2;
+			overflow: hidden;
+		}
+		figcaption {
+			@include absolute($B:0, $L:0);
+			width: 100%;
+			padding: 0.8em 0;
+			background-color: rgba(#000, 0.8);
+			text-align: center;
+		}
+		&.active {
+			&:after {
+				@include psudoClass;
+				@include absolute($B:-17px, $L:0, $R:0);
+				@include triBtm(rgba(#000, 0.8), 17px, 17px);
+				// @include triangle(bottom, rgba(#000, 0.8), 8px);
+				margin: auto;
+			}
+		}
+	}
+	&-block {
+		@include bg($normal_color1);
+		// @include rhythm-margins(0.8, 1.5);
+		@include margin-trailer(1);
+		padding: 0 2em em(40);
+		.moc-row {
+			&:first-of-type {
+				// margin-bottom: 1.2em;
+			}
+		}
+		.txt-1 {
+			line-height: 2;
+		}
+	}
+	&-ctrl {
+		position: relative;
+	}
+	&-btn {
+		position: absolute;
+		z-index: 90;
+		top: 1.5em;
+		@include circle(42px);
+		border: 1px solid $normal_color;
+		&.btn {
+			background-color: transparent;
+			&-prev {
+				left: 22em;
+			}
+			&-next {
+				right: 22em;
+			}
+		}
+	}
+	&-cnt {
+		width: 100%;
+		margin-top: 1.2em;
+		overflow: hidden;
+		&-left {
+			position: relative;
+			text-align: right;
+			padding-right: 2em;
+			font-size: 14px;
+			font-size: 0.875rem;
+			line-height: 32px;
+			// overflow: hidden;
+			&:after {
+				@include psudoClass;
+				@include absolute(11px, -5px);
+				@include wh2(10 100%);
+				@include bg('dot.png', 50%, 0%, repeat-y);
+			}
+		}
+		&-right {
+			padding-left: 2em;
+			font-size: 14px;
+			font-size: 0.875rem;
+			line-height: 32px;
+		}
+	}
+	&-name {
+		width: 100%;
+		border-bottom: 1px solid $normal_color;
+		&.moc-name {
+			line-height: 85px;
+			font-size: em(21);
+		}
+	}
+}
+
+#mocScrollBox {
+	@include wh2(100% $teams_pic-h+17px);
+	overflow: hidden;
+	ul {
+		width: 150%;
+	}
+}
+#mocQueue {
+	// height: 305px;
+	min-height: 270px;
+	overflow: hidden;
+	ul {
+		position: relative;
+	}
+	li {
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		@include opacity(0);
+		@include transition(all 0.3s $easing1);
+		&.active {
+			z-index: 10;
+			@include opacity(1);
+		}
+	}
+}
+
+/*------------------------------------------------------------------------*\
+		>>	teams_art
+\*------------------------------------------------------------------------*/
+.teams_art-block {
+	background-color: #fff;
+	@include margin-trailer(1);
+	.ib {
+		float: none;
+		padding: 0;
+	}
+	article {
+		padding: 0 3em;
+		@media (min-width: $screen-md-min) {
+			padding: 0 2em;
+		}
+	}
+	h2 {
+		border-bottom: 4px solid $normal_color;
+		padding-bottom: 0.6em;
+		margin-bottom: 0.6em;
+	}
+}
+.teams_art1 {
+	.col-xs-4 {
+		width: percentage((4 / 12)) - 0.5%;
+	}
+}
+.teams_art2 {
+	.col-xs-6 {
+		width: percentage((6 / 12)) - 0.25%;
+	}
+}

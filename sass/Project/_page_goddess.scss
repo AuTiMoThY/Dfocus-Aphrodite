@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*------------------------------------------------------------------------*\
+		>>	goddess_page
+\*------------------------------------------------------------------------*/
+.goddess_page {
+	.showcase-slogan {
+		@include rhythm-padding(0.8);
+	}
+	.fullbg {
+		background-color: $normal_color1;
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+	.back_to_list {
+		a {
+			display: block;
+			background-color: $normal_color1;
+			@include rhythm-padding(0.8);
+			border-left: 1px dotted #878787;
+			border-right: 1px dotted #878787;
+			@include transition(all 0.3s ease);
+			&:hover {
+				background-color: lighten($normal_color1, 20%);
+			}
+		}
+		.icon-tri_left {
+			vertical-align: -0.2ex;
+		}
+	}
+}
+
+
+.goddess_aside {
+	&-now {
+		@include margin-trailer(1.6);
+		figcaption {
+			text-align: center;
+		}
+	}
+	&-new_add {
+		.title {
+			width: 100%;
+			background-color: $normal_color;
+			color: #fff;
+			text-align: center;
+			@include adjFontSize(14px, 1.2);
+			letter-spacing: 1px;
+		}
+	}
+}
+
+.goddess_cnt {
+	&-block {
+		background-color: #fff;
+		header {
+			width: 100%;
+			padding: 1.6em 2em;
+		}
+		footer {
+			padding: 1.6em 1.2em;
+			background-color: $normal_color1;
+			.icon-tri_right {
+				vertical-align: -0.25ex;
+				border-left-color: $normal_color;
+			}
+			a {
+				@include transition(all 0.3s ease);
+				&:hover {
+					color: $normal_color;
+				}
+			}
+		}
+	}
+	&-h1 {
+		width: 100%;
+		@include padding-trailer(0.8);
+		border-bottom: 4px solid $normal_color;
+		@include adjFontSize(21px, 1.2);
+		font-family: $normal_font;
+		text-align: center;
+	}
+	&-container {
+		padding: 0 4em;
+	}
+	.btns {
+		display: table;
+		margin: 2em auto;
+	}
+}

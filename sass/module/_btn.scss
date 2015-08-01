@@ -90,6 +90,9 @@ button {
 				@include bg(darken($normal_color, 20%));
 			}
 		}
+		a {
+			color: #fff;
+		}
 		&:after {
 			@include psudoClass(dib);
 			@include triangle(right, #fff, 7px);
@@ -105,66 +108,107 @@ button {
 	}
 	&-back {
 		display: table;
-		margin: 1em auto 0;
-		padding: 0.3em;
-		
-		border: 1px solid #5c2113;
-		border-radius: 0;
-		button {
-			@include wh(40, 13);
-			@include bg-t(0, 0);
+		padding: 0 1.2em;
+		margin: 2em auto 0;
+		&:after {
+			display: none;
 		}
-		&:hover {
-			@include bg(lighten($normal_color2, 20%));
+		&:before {
+			@include psudoClass(dib);
+			@include triangle(left, #fff, 7px);
+			vertical-align: -0.3ex;
+			margin-right: 0.4em;
 		}
-		&.btn {
-			@include bg(#fff);
-		}
-	}
-	&-send {
-		// margin: 0;
-		&:hover {
-			@include bg(#5c2113);
-			button {
-				color: #fff;
-			}
+		&.ib {
+			display: inline-block;
+			margin: 0;
 		}
 	}
-	&-reset.btn {
-		&:hover {
-			@include bg(#727171);
-			border: 1px solid #727171;
-			button {
-				color: #fff;
-			}
+	&-top {
+		&:after {
+			display: none;
+		}
+		&:before {
+			@include psudoClass(dib);
+			@include triangle(top, #fff, 7px);
+			margin-right: 0.4em;
+		}
+		&.ib {
+			display: inline-block;
 		}
 	}
-	&-assess {
-		display: block;
-		@include wh2(115 30);
-		@include bg(#004f5b);
-		color: #fff;
-		text-align: center;
-		line-height: 30px;
+	&-prev_page {
+		@extend .btn-back;
+		margin-top: 0;
+		a {
+			display: inline;
+		}
 	}
-	&-cancel.btn.btn {
-		margin-right: 2em;
-	}
-	&-next.btn.btn {
-		
-	}
-	&-adm.btn.btn {
-		@include bg($normal_color);
-		margin: 0;
-		padding: 0.3em 0.8em;
-	}
-	&-adm-reply {
-		// @include absolute(-1.5em);
-	}
-	&-adm-del {
-
+	&-next_page {
+		a {
+			display: inline;
+		}
 	}
 
+	// &-send {
+	// 	// margin: 0;
+	// 	&:hover {
+	// 		@include bg(#5c2113);
+	// 		button {
+	// 			color: #fff;
+	// 		}
+	// 	}
+	// }
+	// &-reset.btn {
+	// 	&:hover {
+	// 		@include bg(#727171);
+	// 		border: 1px solid #727171;
+	// 		button {
+	// 			color: #fff;
+	// 		}
+	// 	}
+	// }
+	// &-assess {
+	// 	display: block;
+	// 	@include wh2(115 30);
+	// 	@include bg(#004f5b);
+	// 	color: #fff;
+	// 	text-align: center;
+	// 	line-height: 30px;
+	// }
+	// &-cancel.btn.btn {
+	// 	margin-right: 2em;
+	// }
+	// &-next.btn.btn {
+		
+	// }
+	// &-adm.btn.btn {
+	// 	@include bg($normal_color);
+	// 	margin: 0;
+	// 	padding: 0.3em 0.8em;
+	// }
+	// &-adm-reply {
+	// 	// @include absolute(-1.5em);
+	// }
+	// &-adm-del {
+
+	// }
+	&-prev {
+		&:before {
+			@include psudoClass;
+			@include absolute(0, $L:10px, $B:0);
+			margin: auto;
+			@include triangle(left, $normal_color, 10px);
+		}
+	}
+	&-next {
+		&:before {
+			@include psudoClass;
+			@include absolute(0, $R:10px, $B:0);
+			margin: auto;
+			@include triangle(right, $normal_color, 10px);
+		}
+	}
 }//.btn
 
 #marqueeBtn {
@@ -175,21 +219,21 @@ button {
 	}
 }
 
-.more_btn {
-	@include absolute($R:50px, $B:20px);
-	@include wh2(60 20);
-	@include bg($normal_color);
-	border: 1px solid #172934;
-	transition: all 0.1s ease-out;
-	a {
-		@include wh2;
-		display: block;
-		color: #000;
-		font-size: em(11);
-		line-height: 20px;
-		text-align: center;
-	}
-	&:hover {
-		box-shadow: 1px 1px 3px #666;
-	}
-}
+// .more_btn {
+// 	@include absolute($R:50px, $B:20px);
+// 	@include wh2(60 20);
+// 	@include bg($normal_color);
+// 	border: 1px solid #172934;
+// 	transition: all 0.1s ease-out;
+// 	a {
+// 		@include wh2;
+// 		display: block;
+// 		color: #000;
+// 		font-size: em(11);
+// 		line-height: 20px;
+// 		text-align: center;
+// 	}
+// 	&:hover {
+// 		box-shadow: 1px 1px 3px #666;
+// 	}
+// }

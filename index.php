@@ -27,13 +27,7 @@ array('pic'=>'dist/images/temp/tem-pic6.jpg'),
 // -------------------------------
 	include_once INC_PATH.'head.php';
  ?>
-<script src="http://s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-34572.js"></script>
-<style>
-main img {
-	width: 100%;
-	max-width: none;
-}
-</style>
+
 <?php
 //app
 	include_once INC_PATH.'social.php';
@@ -80,7 +74,7 @@ main img {
 	include_once INC_PATH.'header.php';
 ?>
 
-<div id="sec1">
+<div id="sec1"  class="js-sec1">
 	<section id="bannerSlider" class="banner flexslider" >
 		<ul class="slides">
 			<li class="banner" style="background-image: url('<?php path_au('img'); ?>banner-index1.jpg')"><a href="products_list1.php" class="index-banner hide_txt">more info</a></li>
@@ -155,7 +149,7 @@ main img {
 				</li>
 			</ul><!-- /.container  END  !! -->
 			<div class="index_service-more">
-				<div class="btn btn-aphrodite"><a href="">MORE SERVICE</a></div>
+				<div class="btn btn-aphrodite"><a href="<?php webPageUrlAu('service'); ?>">MORE SERVICE</a></div>
 			</div>
 		</div><!-- /.wrapper  END  !! -->
 	</section>
@@ -195,7 +189,7 @@ main img {
 						</a></li>
 					</ul>
 					<div class="index_news-more">
-						<div class="btn btn-aphrodite"><a href="">MORE NEWS</a></div>
+						<div class="btn btn-aphrodite"><a href="<?php webPageUrlAu('news'); ?>">MORE NEWS</a></div>
 					</div>
 				</div>
 			</div><!-- /.container  END  !! -->
@@ -287,7 +281,7 @@ main img {
 					</li>
 				</ul>
 				<div class="index_showcase-more">
-					<div class="btn btn-aphrodite"><a href="">showcase</a></div>
+					<div class="btn btn-aphrodite"><a href="<?php webPageUrlAu('goddess'); ?>">showcase</a></div>
 				</div>
 			</div><!-- /.container  END  !! -->
 		</div><!-- /.wrapper  END  !! -->
@@ -311,6 +305,111 @@ main img {
  ?>
 
 <script>
+$(window).load(function(){
+	var bannerSlider = $('#bannerSlider');
+	if (bannerSlider.length) {
+
+		$('#bannerSlider').flexslider({
+			animation      : "fade",
+			controlNav     : true,
+			directionNav   : true,
+			slideshowSpeed : 5000,
+			easing: "easeInOutElastic",
+			animationLoop: true,
+			// initDelay: 1000,
+			minItems: 1,
+			maxItems: 5,
+			// itemMargin: 2,
+	        // move:1102,
+	        // controlsContainer: $('#hcarouselcontrols .well'),
+			init: function(){
+				// (function () {
+
+					var support = { animations : Modernizr.cssanimations },
+						container = document.getElementById( 'ip-container' ),
+						header = container.querySelector( 'header.ip-header' ),
+						loader = new PathLoader( document.getElementById( 'ip-loader-circle' ) ),
+						animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
+						// animation end event name
+						animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ];
+
+					function init() {
+						var onEndInitialAnimation = function() {
+							if( support.animations ) {
+								this.removeEventListener( animEndEventName, onEndInitialAnimation );
+							}
+
+							startLoading();
+						};
+
+						// disable scrolling
+						window.addEventListener( 'scroll', noscroll );
+
+						// initial animation
+						classie.add( container, 'loading' );
+
+						if( support.animations ) {
+							container.addEventListener( animEndEventName, onEndInitialAnimation );
+						}
+						else {
+							onEndInitialAnimation();
+						}
+					}
+
+					function startLoading() {
+						// simulate loading something..
+						var simulationFn = function(instance) {
+							var progress = 0,
+								interval = setInterval( function() {
+									progress = Math.min( progress + Math.random() * 0.1, 1 );
+
+									instance.setProgress( progress );
+
+									// reached the end
+									if( progress === 1 ) {
+										classie.remove( container, 'loading' );
+										classie.add( container, 'loaded' );
+										clearInterval( interval );
+
+										var onEndHeaderAnimation = function(ev) {
+											if( support.animations ) {
+												if( ev.target !== header ) return;
+												this.removeEventListener( animEndEventName, onEndHeaderAnimation );
+											}
+
+											classie.add( document.body, 'layout-switch' );
+											window.removeEventListener( 'scroll', noscroll );
+										};
+
+										if( support.animations ) {
+											header.addEventListener( animEndEventName, onEndHeaderAnimation );
+										}
+										else {
+											onEndHeaderAnimation();
+										}
+									}
+								}, 80 );
+						};
+
+						loader.setProgressFn( simulationFn );
+					}
+					
+					function noscroll() {
+						window.scrollTo( 0, 0 );
+					}
+
+					init();
+
+				// })();
+
+			}
+		});
+	};
+
+
+
+});
+
 $(function() {
 	$(".index_news-item").hover(function() {
 		var thispic = $(this).data('pic');

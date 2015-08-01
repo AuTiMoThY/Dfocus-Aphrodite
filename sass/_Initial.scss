@@ -11,6 +11,9 @@
 	&.s {
 		width: 980px;
 	}
+	&.s1 {
+		width: 900px;
+	}
 	@media (min-width: $screen-sm-min) {
 		width: $container-sm;
 	}
@@ -48,9 +51,15 @@ body {
 	}
 }
 
-.temporary {
+.temp {
 	display: block;
 	margin: 0 auto;
+}
+
+.editorDF {
+	img {
+		
+	}
 }
 
 .ib {

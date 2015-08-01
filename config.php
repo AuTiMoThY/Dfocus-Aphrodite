@@ -5,11 +5,10 @@ define('INC_PATH', 'dist/inc/');
 define('CSS_PATH', 'dist/css/');
 define('JS_PATH', 'dist/js/');
 
-define('PROJECT', '肢端肥大症 衛教資訊網');
+define('PROJECT', '女神時尚診所');
 define('KEYWORDS', '網站關鍵字在這');
 define('DESCRIPTION', '網站描述在這');
 define('COPYRIGHT', '網站Copyright在這');
-
 
 
 function path_au($what) {

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /******************************************/
-/*		DFocus
+/*		Aphrodite
 /*			by DFocus AuTiMoThY
 /******************************************/
 /*
@@ -66,7 +66,7 @@
 /*========================================================================*\
 		>	btn
 \*========================================================================*/
-// @import "module/_pageBtn";
+@import "module/_pageBtn";
 @import "module/_btn";
 // @import "_materialBtn";
 
@@ -120,9 +120,10 @@
 		>	page
 \*========================================================================*/
 @import "project/_page_index";
-// @import "project/_page_works";
-// @import "project/_page_aboutContent";
-// @import "project/_page_collaborate";
+@import "project/_page_service";
+@import "project/_page_teams";
+@import "project/_page_goddess";
+
 
 
 

@@ -116,7 +116,7 @@
 			<div class="social_link ib">
 				<a href="#" class="icon-facebook col hide_txt" alt="Facebook 粉絲團">Facebook</a>
 				<a href="#" class="icon-pixnet col hide_txt" alt="Pixnet 部落格">Pixnet</a>
-				<a href="#" class="icon-line col hide_txt" alt="">Line</a>
+				<a href="javascript:void 0;" id="openLine" class="icon-line col hide_txt" alt="">Line</a>
 			</div>
 			<div class="phone ib">
 				<span class="txt-ft2"><span class="txt-tw">免付費專線</span>:0800-000-488</span>

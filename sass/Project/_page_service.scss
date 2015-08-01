@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+.category_bar {
+	position: relative;
+	z-index: 10;
+	height: 100px;
+	ul, li {
+		height: 100%;
+	}
+	ul {
+		position: relative;
+		z-index: 21;
+		padding: 0.3em 0;
+	}
+	li {
+		border-right: 1px dotted #878787;
+		&:first-of-type {
+			border-left: 1px dotted #878787;
+		}
+		&.active {
+			a {
+				color: #fff;
+			}
+		}
+		&:not(.active) {
+
+		}
+		&:hover {
+			&:not(.active) {
+				a {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	a {
+		display: block;
+		@include wh2;
+		padding-top: 20px;
+		color: #84d8d1;
+		@include adjFontSize(16px);
+		text-align: center;
+		vertical-align: middle;
+		&:hover {
+			
+		}
+	}
+	&>.bg {
+		@include absolute($T:0, $L:0);
+		z-index: 10;
+		@include wh2;
+		background-color: $normal_color1;
+	}
+	&>.shape {
+		@include absolute($R:0, $L:0, $B:-20px);
+		z-index: 9;
+		@include wh2(60);
+		margin: auto;
+		&:before {
+			@include psudoClass();
+			@include absolute($B:0px);
+			z-index: 20;
+			@include wh2;
+			@include bg($normal_color1);
+			@include rotate(45deg);
+		}
+		&:after {
+			@include psudoClass();
+			@include absolute($B:-10px);
+			z-index: 19;
+			@include wh2;
+			@include bg($normal_color);
+			@include rotate(45deg);
+		}
+	}
+}
+
+/*========================================================================*\
+	>>	aside
+\*========================================================================*/
+.service_category {
+	li {
+		float: none;
+		width: 100%;
+	}
+	a {
+		display: block;
+		@include wh2;
+		padding: 0 30px 0 40px;
+		line-height: 50px;
+	}
+	&-list {
+		&>li {
+			background-color: $normal_color1;
+			&>a {
+				border-bottom: 5px solid #fff;
+				color: #fff;
+			}
+		}
+	}
+	&-sub_list {
+		background-color: $normal_color2;
+		border-bottom: 5px solid #fff;
+		&>li {
+			@include transition(all 0.3s ease-in-out);
+			&:hover, &.active {
+				background-color: $normal_color;
+			}
+			&:hover {
+				a {
+					font-weight: bold;
+				}
+			}
+			&>a {
+				color: $normal_color1;
+				&:before {
+					@include psudoClass('dib');
+					@include wh2(7);
+					margin-right: 0.8em;
+					background-color: $normal_color1;
+					@include rotate(45deg);
+					vertical-align: 0.3ex;
+				}
+			}
+		}
+	}
+}
+
+/*========================================================================*\
+	>>	content
+\*========================================================================*/
+.service_cnt {
+	&-block {
+		width: 100%;
+		background-color: #fff;
+		header {
+			position: relative;
+			padding: em(22) em(20);
+		}
+	}
+	&-h1 {
+		@include absolute($T:53px, $L:55px);
+		@include adjFontSize(43px);
+		font-family: $normal_font;
+		margin: 0;
+	}
+	&-h2 {
+		@include absolute($T:100px, $L:55px);
+		@include adjFontSize(13px, 1);
+	}
+	&-container {
+		padding: 0.6em 4em 2em;
+	}
+}
