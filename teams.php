@@ -38,7 +38,6 @@
 // header.php inclube fb code
 // -------------------------------
 	include_once INC_PATH.'header.php';
-echo $get_category;
 ?>
 
 <section class="banner">

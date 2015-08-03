@@ -12,7 +12,9 @@ if (ie<=8) {
 
 console.log(oldIE);
 
-
+function webLinkAlert1() {
+	alert('連結至該分類頁面');
+}
 
 function viewPortWidthHeight() {
   var wh = {};
@@ -121,7 +123,7 @@ function fancyDFAuCtrl() {
 		// fancyDFAu.style.top = fancyDFAuPosY / 2 + 'px';
 		// fancyDFAu.style.left = fancyDFAuPosX / 2 + 'px';
 
-		$(".fancyDFAu-bg, #openLine, #notifications-full-close").click(function() {
+		$(".fancyDFAu-bg, .js-openLine, #notifications-full-close").click(function() {
 			fancyDFAuisOpen($("#fancyDFAu"), $("#fancyDFAu.open"))
 		});
 

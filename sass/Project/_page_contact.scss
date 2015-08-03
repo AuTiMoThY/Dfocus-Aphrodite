@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.aphrodite_contact {
+	background-color: #fff;
+	@include margin-trailer(1);
+	&-pic {
+		@include bgRWD('contact-pic.jpg', 361, 518);
+	}
+	&+.map {
+		height: 260px;
+	}
+}
+.aphrodite-fashion-clinic {
+	@include wh2(100% 39+20);
+	@include bg-i(0, -28);
+	@include padding-trailer(0.8);
+	@include margin-trailer(0.8);
+	border-bottom: 4px solid $normal_color;
+}
+
+.social_btns {
+	margin-top: 2em;
+	.js-openLine {
+		cursor: pointer;
+	}
+	&-item {
+		&:hover {
+			.social_btn {
+				&:before {
+					background-color: lighten($normal_color1, 20%);
+				}
+				&:after {
+					background-color: darken($normal_color, 10%);
+				}
+			}
+		}
+	}
+}
+.social_btn {
+	position: relative;
+	@include wh2(85);
+	margin: auto;
+	// margin-right: 30px;
+	&:before {
+		@include psudoClass();
+		@include absolute();
+		z-index: 20;
+		@include wh2;
+		@include bg($normal_color1);
+		@include rotate(45deg);
+		@include transition(all 0.3s ease-in-out);
+	}
+	&:after {
+		@include psudoClass();
+		@include absolute($B:-10px);
+		z-index: 19;
+		@include wh2;
+		@include bg($normal_color);
+		@include rotate(45deg);
+		@include transition(all 0.3s ease-in-out);
+	}
+	.inner {
+		@include absolute(23px);
+		z-index: 21;
+		width: 100%;
+	}
+	i {
+		margin: auto;
+	}
+	&+.txt {
+		margin-top: 1.8em;
+		text-align: center;
+		color: $normal_color1;
+		@include adjFontSize(21px);
+		letter-spacing: 1px;
+	}
+}

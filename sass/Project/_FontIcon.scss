@@ -36,6 +36,10 @@ $icon-layout: horizontal;
 		color: $normal_color1;
 		@include adjFontSize(14px, 1.4);
 	}
+	&-3 {
+		color: $normal_color1;
+		@include adjFontSize(16px, 1.2);
+	}
 	&-title1 {
 		color: $normal_color1;
 		@include adjFontSize(21px, 1.5);
@@ -122,6 +126,21 @@ $icon-layout: horizontal;
 	&-line {
 		@include wh2(29 28);
 		@include bg-i(-158, 0);
+	}
+	&-facebook2 {
+		display: block;
+		@include wh2(38 39);
+		@include bg-i(0, -68);
+	}
+	&-pixnet2 {
+		display: block;
+		@include wh2(33 39);
+		@include bg-i(-80, -68);
+	}
+	&-line2 {
+		display: block;
+		@include wh2(40 39);
+		@include bg-i(-39, -68);
 	}
 	&-phone {
 		@include wh2(20 16);

@@ -55,48 +55,48 @@
 			<div class="col-xs-6">
 				<h3>微整</h3>
 				<ul class="col-xs-3">
-<li><a href="">波尿酸</a></li>
-<li><a href="">3D聚左旋乳酸</a></li>
-<li><a href="">音波拉皮</a></li>
-<li><a href="">酷爾塑平</a></li>
+<li><a href="javascript:webLinkAlert1();">波尿酸</a></li>
+<li><a href="javascript:webLinkAlert1();">3D聚左旋乳酸</a></li>
+<li><a href="javascript:webLinkAlert1();">音波拉皮</a></li>
+<li><a href="javascript:webLinkAlert1();">酷爾塑平</a></li>
 				</ul>
 				<ul class="col-xs-3">
-<li><a href="">玫瑰拉提術</a></li>
-<li><a href="">酷爾塑平</a></li>
-<li><a href="">美白針</a></li>
-<li><a href="">杏仁酸換膚</a></li>
+<li><a href="javascript:webLinkAlert1();">玫瑰拉提術</a></li>
+<li><a href="javascript:webLinkAlert1();">酷爾塑平</a></li>
+<li><a href="javascript:webLinkAlert1();">美白針</a></li>
+<li><a href="javascript:webLinkAlert1();">杏仁酸換膚</a></li>
 				</ul>
 				<ul class="col-xs-3">
-<li><a href="">LPG纖體雕塑</a></li>
-<li><a href="">飛梭雷射</a></li>
-<li><a href="">G緊雷射</a></li>
+<li><a href="javascript:webLinkAlert1();">LPG纖體雕塑</a></li>
+<li><a href="javascript:webLinkAlert1();">飛梭雷射</a></li>
+<li><a href="javascript:webLinkAlert1();">G緊雷射</a></li>
 				</ul>
 				<ul class="col-xs-3">
-					<li><a href=""></a></li>
+					<li><a href="javascript:webLinkAlert1();"></a></li>
 				</ul>
 			</div>
 			<div class="col-xs-6">
 				<h3>整形外科</h3>
 				<ul class="col-xs-3">
-<li><a href="">【眼部】割</a></li>
-<li><a href="">【眼部】縫</a></li>
-<li><a href="">【眼部】迷你切割</a></li>
-<li><a href="">【眼部】眼袋</a></li>
+<li><a href="javascript:webLinkAlert1();">【眼部】割</a></li>
+<li><a href="javascript:webLinkAlert1();">【眼部】縫</a></li>
+<li><a href="javascript:webLinkAlert1();">【眼部】迷你切割</a></li>
+<li><a href="javascript:webLinkAlert1();">【眼部】眼袋</a></li>
 				</ul>
 				<ul class="col-xs-3">
-<li><a href="">【鼻】韓式</a></li>
-<li><a href="">【鼻】GOTEX</a></li>
-<li><a href="">【鼻】自體軟骨</a></li>
-<li><a href="">【拉皮】內視鏡</a></li>
+<li><a href="javascript:webLinkAlert1();">【鼻】韓式</a></li>
+<li><a href="javascript:webLinkAlert1();">【鼻】GOTEX</a></li>
+<li><a href="javascript:webLinkAlert1();">【鼻】自體軟骨</a></li>
+<li><a href="javascript:webLinkAlert1();">【拉皮】內視鏡</a></li>
 				</ul>
 				<ul class="col-xs-3">
-<li><a href="">【拉皮】5爪8爪</a></li>
-<li><a href="">【胸部】自體</a></li>
-<li><a href="">【胸部】內視果凍</a></li>
+<li><a href="javascript:webLinkAlert1();">【拉皮】5爪8爪</a></li>
+<li><a href="javascript:webLinkAlert1();">【胸部】自體</a></li>
+<li><a href="javascript:webLinkAlert1();">【胸部】內視果凍</a></li>
 				</ul>
 				<ul class="col-xs-3">
-<li><a href="">【抽脂】</a></li>
-<li><a href="">【美腿】</a></li>
+<li><a href="javascript:webLinkAlert1();">【抽脂】</a></li>
+<li><a href="javascript:webLinkAlert1();">【美腿】</a></li>
 				</ul>
 			</div>
 		</div><!-- /.container  END  !! -->
@@ -116,7 +116,7 @@
 			<div class="social_link ib">
 				<a href="#" class="icon-facebook col hide_txt" alt="Facebook 粉絲團">Facebook</a>
 				<a href="#" class="icon-pixnet col hide_txt" alt="Pixnet 部落格">Pixnet</a>
-				<a href="javascript:void 0;" id="openLine" class="icon-line col hide_txt" alt="">Line</a>
+				<a href="javascript:void 0;" id="openLine" class="icon-line col hide_txt js-openLine" alt="">Line</a>
 			</div>
 			<div class="phone ib">
 				<span class="txt-ft2"><span class="txt-tw">免付費專線</span>:0800-000-488</span>
