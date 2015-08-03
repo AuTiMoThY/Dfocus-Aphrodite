@@ -158,12 +158,12 @@ $(function() {
 	// $(".news-item").
 	$(".js-ctrl_btn").click(function() {
 		if (!($(this).parent(".news-item").hasClass('open'))) {
-			$(".news-item").removeClass('open');
+			// $(".news-item").removeClass('open');
 			$(this).parent(".news-item").addClass('open');
-			$(window).scrollTo($(this).parent(".news-item"), 1000, {offset: -80});
+			$(window).scrollTo($(this).parent(".news-item"), 600, {offset: -80});
 		} else{
-			$(".news-item").removeClass('open');
-			$(window).scrollTo($(this).parent(".news-item"), 1000, {offset: -80});
+			$(this).parent(".news-item").removeClass('open');
+			$(window).scrollTo($(this).parent(".news-item"), 300, {offset: -80});
 		};
 	});
 });

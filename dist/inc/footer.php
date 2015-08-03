@@ -113,15 +113,15 @@
 					©2015 Aphordite Plastic Clinic All Rights Reserved<br>最佳瀏覽環境chome,safari,firefox或IE10以上
 				</div>
 			</div>
-			<div class="social_link ib">
+			<div class="phone ib right">
+				<span class="txt-ft2 fz1"><span class="txt-tw">免付費專線</span>:0800-000-488</span>
+				<span class="txt-ft2 fz1"><i class="icon-phone ib"></i>:02-27526931</span>
+				<span class="txt-ft2"><span class="txt-tw">營業時間</span>:12:00~17:00</span>
+			</div>
+			<div class="social_link ib right">
 				<a href="#" class="icon-facebook col hide_txt" alt="Facebook 粉絲團">Facebook</a>
 				<a href="#" class="icon-pixnet col hide_txt" alt="Pixnet 部落格">Pixnet</a>
 				<a href="javascript:void 0;" id="openLine" class="icon-line col hide_txt js-openLine" alt="">Line</a>
-			</div>
-			<div class="phone ib">
-				<span class="txt-ft2"><span class="txt-tw">免付費專線</span>:0800-000-488</span>
-				<span class="txt-ft2"><i class="icon-phone ib"></i>:02-27526931</span>
-				<span class="txt-ft2"><span class="txt-tw">營業時間</span>:12:00~17:00</span>
 			</div>
 		</div><!-- /.container  END  !! -->
 	</div><!-- /.wrapper  END  !! -->

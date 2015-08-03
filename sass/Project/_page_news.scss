@@ -13,17 +13,17 @@
 	&-item {
 		position: relative;
 		min-height: 320px;
-		// max-height: 0;
-		height: 320px;
+		max-height: 0;
+		// height: 320px;
 		overflow: hidden;
 		background-color: #fff;
 		padding: em(40) em(85) 0;
 		@include margin-trailer();
-		// @include transition(all 0.3s ease-in-out);
+		@include transition(max-height 0.6s ease-in-out);
 		&.open {
 			// min-height: 320px;
-			height: auto;
-			// max-height: 2000px;
+			// height: auto;
+			max-height: 3000px;
 			.news-cnt {
 				padding-bottom: em(50);
 			}
@@ -40,14 +40,14 @@
 		width: 700px;
 		// padding-left: 1.2em;
 		margin-left: 1em;
-	}
-	&-title {
-		width: 100%;
-		@include padding-trailer(0.8);
-		@include margin-trailer(0.8);
-		border-bottom: 4px solid $normal_color;
-		@include adjFontSize(21px, 1);
-		font-family: $normal_font;
+		.news-title {
+			width: 100%;
+			@include padding-trailer(0.8);
+			@include margin-trailer(0.8);
+			border-bottom: 4px solid $normal_color;
+			@include adjFontSize(21px, 1);
+			font-family: $normal_font;
+		}
 	}
 }
 

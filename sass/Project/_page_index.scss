@@ -15,10 +15,10 @@
 	margin-left: -140px;
 	margin-top: (91/2)*-1px;
 	@include wh2(280 91);
-	fill: lighten(#000, 20%);
+	fill: #fff;
 	@for $i from 1 through 9 {
 		.path#{$i} {
-			@include animation(logo2 7s $i*0.25s ease-in-out infinite alternate);
+			// @include animation(logo2 7s $i*0.25s ease-in-out infinite alternate);
 		}
 	}
 }

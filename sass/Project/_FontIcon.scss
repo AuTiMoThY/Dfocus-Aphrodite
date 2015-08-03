@@ -63,6 +63,9 @@ $icon-layout: horizontal;
 		font-family: $normal_font4;
 		@include adjFontSize(18px, 1);
 		letter-spacing: 1px;
+		&.fz1 {
+			@include adjFontSize(14px, 1);
+		}
 	}
 	&-tw {
 

@@ -128,60 +128,72 @@ $slider-pb: (768 / 1920) * 100%;
 
 
 .flex-control-nav {
-	@include absolute($B:0, $L:0, $R:0);
+	@include absolute($B:1.8em, $L:0, $R:0);
 	width: auto;
 	margin: auto;
 	z-index:20;
 	text-align: center;
 }
-// .flex-direction-nav {
-// 	position: absolute;
-// 	bottom:20px;
-// 	right: 0;
-// 	li {
-// 		@include wh(46px);
-// 		float: left;
-// 	}
-// 	.flex-prev, .flex-next {
-// 		@include wh(41px);
-// 		display: inline-block;
-// 		// background: url('../images/iconTxt.png') no-repeat;
-// 		opacity: 1;
-// 		left: auto;
-// 		right: auto;
-// 		margin-top: -23px;
-// 	}
-// 	.flex-prev {
-// 		&:hover {
-// 			@include hover;
-// 		}
-// 	}
-// 	.flex-next {
-// 		background-position: -46px 0;
-// 		margin-left: 0;
-// 		&:hover {
-// 			@include hover;
-// 		}
-// 	}
-// }
+.flex-direction-nav {
+	// position: absolute;
+	// bottom:20px;
+	// right: 0;
+	// li {
+	// 	@include wh(46px);
+	// 	float: left;
+	// }
+	a {
+		@include hide_txt;
+		&:before {
+			display: none;
+		}
+		&:after {
+			display: none;
+		}
+	}
+	.flex-prev, .flex-next {
+		@include wh2(48 161);
+		display: inline-block;
+		// background: url('../images/iconTxt.png') no-repeat;
+		// opacity: 1;
+		// left: auto;
+		// right: auto;
+		// margin-top: -23px;
+	}
+	.flex-prev {
+		@include bg-i(0, -108);
+		&:hover {
+			// @include hover;
+		}
+	}
+	.flex-next {
+		@include bg-i(-49, -108);
+		// background-position: -46px 0;
+		// margin-left: 0;
+		&:hover {
+			// @include hover;
+		}
+	}
+}
 
-// .flex-control-paging {
-// 	li {
+.flex-control-paging {
+	li {
 
-// 		a {
-// 			// @include wh(11px);
-// 			@include circle(10px);
-// 			// background: rgba(#fff,0.5);
-// 			@include bg(#fff);
-// 			&.flex-active, &:hover {
-// 				// background: rgba(#fff799,1);
-// 				@include bg(#fff799);
-// 				@include box-shadow(1px 1px 3px darken($normal_color, 10%));
-// 				@include scale(1.1);
-// 			}
-// 		}
-// 	}
-// }
+		a {
+			@include wh(10px);
+			background-color: $normal_color;
+			// @include circle(10px);
+			border-radius: 0;
+			border: none;
+			@include rotate(45deg);
+			&.flex-active, &:hover {
+				background-color: $normal_color1;
+				@include box-shadow(1px 1px 3px darken($normal_color1, 10%));
+				// @include scale(1.1);
+			}
+		}
+	}
+}
 
 // .slides .well{
 //   height:100%;

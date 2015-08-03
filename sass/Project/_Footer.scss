@@ -155,6 +155,18 @@ footer {
 		.other_inf {
 			background-color: $normal_color;
 			@include rhythm-padding(0.6);
+			.phone {
+				padding-top: 5px;
+				span {
+					margin-left: 0.3rem;
+				}
+			}
+		}
+		.social_link {
+			padding-top: 5px;
+			a {
+				margin-left: 0.4em;
+			}
 		}
 		.logo {
 			@include wh2(46 39);

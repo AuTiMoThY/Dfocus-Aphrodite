@@ -13,8 +13,8 @@
 .aphrodite-fashion-clinic {
 	@include wh2(100% 39+20);
 	@include bg-i(0, -28);
-	@include padding-trailer(0.8);
-	@include margin-trailer(0.8);
+	@include padding-trailer(0.6);
+	@include rhythm-margins(0.6);
 	border-bottom: 4px solid $normal_color;
 }
 

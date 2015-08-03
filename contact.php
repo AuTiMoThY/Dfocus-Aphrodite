@@ -48,7 +48,7 @@
 <div class="wrapper">
 	<div class="container">
 		<section class="aphrodite_contact cf">
-			<div class="col-xs-3">
+			<div class="col-xs-3" style="padding:0;">
 				<div class="aphrodite_contact-pic"></div>
 			</div>
 			<div class="col-xs-9">

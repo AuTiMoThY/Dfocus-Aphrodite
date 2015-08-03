@@ -1217,7 +1217,7 @@ section.fullbg {
 .pages_btn li.prev > a .icon {
   width: 27px;
   height: 27px;
-  background: url('../images/iconTxt.png?1438579197') -47px 0px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') -47px 0px no-repeat;
 }
 .pages_btn li.prev:hover {
   background: none;
@@ -1231,7 +1231,7 @@ section.fullbg {
 .pages_btn li.next > a .icon {
   width: 27px;
   height: 27px;
-  background: url('../images/iconTxt.png?1438579197') -47px 0px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') -47px 0px no-repeat;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -1740,6 +1740,18 @@ footer.global_ft .other_inf {
   padding-bottom: 14px;
   padding-bottom: 0.9rem;
 }
+footer.global_ft .other_inf .phone {
+  padding-top: 5px;
+}
+footer.global_ft .other_inf .phone span {
+  margin-left: 0.3rem;
+}
+footer.global_ft .social_link {
+  padding-top: 5px;
+}
+footer.global_ft .social_link a {
+  margin-left: 0.4em;
+}
 footer.global_ft .logo {
   width: 46px;
   height: 39px;
@@ -1781,12 +1793,53 @@ footer.global_ft .logo svg {
 .flex-control-nav {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 1.8em;
   left: 0;
   width: auto;
   margin: auto;
   z-index: 20;
   text-align: center;
+}
+
+.flex-direction-nav a {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+.flex-direction-nav a:before {
+  display: none;
+}
+.flex-direction-nav a:after {
+  display: none;
+}
+.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next {
+  width: 48px;
+  height: 161px;
+  display: inline-block;
+}
+.flex-direction-nav .flex-prev {
+  background: url('../images/iconTxt.png?1438581682') 0px -108px no-repeat;
+}
+.flex-direction-nav .flex-next {
+  background: url('../images/iconTxt.png?1438581682') -49px -108px no-repeat;
+}
+
+.flex-control-paging li a {
+  width: 10px;
+  height: 10px;
+  background-color: #45bcb4;
+  border-radius: 0;
+  border: none;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.flex-control-paging li a.flex-active, .flex-control-paging li a:hover {
+  background-color: #282828;
+  -webkit-box-shadow: 1px 1px 3px #0e0e0e;
+  box-shadow: 1px 1px 3px #0e0e0e;
 }
 
 /*------------------------------------------------------------------------*\
@@ -2142,52 +2195,7 @@ footer.global_ft .logo svg {
   margin-top: -45.5px;
   width: 280px;
   height: 91px;
-  fill: #333333;
-}
-#aphroditeLogo2 .path1 {
-  -webkit-animation: logo2 7s 0.25s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 0.25s ease-in-out infinite alternate;
-  animation: logo2 7s 0.25s ease-in-out infinite alternate;
-}
-#aphroditeLogo2 .path2 {
-  -webkit-animation: logo2 7s 0.5s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 0.5s ease-in-out infinite alternate;
-  animation: logo2 7s 0.5s ease-in-out infinite alternate;
-}
-#aphroditeLogo2 .path3 {
-  -webkit-animation: logo2 7s 0.75s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 0.75s ease-in-out infinite alternate;
-  animation: logo2 7s 0.75s ease-in-out infinite alternate;
-}
-#aphroditeLogo2 .path4 {
-  -webkit-animation: logo2 7s 1s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 1s ease-in-out infinite alternate;
-  animation: logo2 7s 1s ease-in-out infinite alternate;
-}
-#aphroditeLogo2 .path5 {
-  -webkit-animation: logo2 7s 1.25s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 1.25s ease-in-out infinite alternate;
-  animation: logo2 7s 1.25s ease-in-out infinite alternate;
-}
-#aphroditeLogo2 .path6 {
-  -webkit-animation: logo2 7s 1.5s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 1.5s ease-in-out infinite alternate;
-  animation: logo2 7s 1.5s ease-in-out infinite alternate;
-}
-#aphroditeLogo2 .path7 {
-  -webkit-animation: logo2 7s 1.75s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 1.75s ease-in-out infinite alternate;
-  animation: logo2 7s 1.75s ease-in-out infinite alternate;
-}
-#aphroditeLogo2 .path8 {
-  -webkit-animation: logo2 7s 2s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 2s ease-in-out infinite alternate;
-  animation: logo2 7s 2s ease-in-out infinite alternate;
-}
-#aphroditeLogo2 .path9 {
-  -webkit-animation: logo2 7s 2.25s ease-in-out infinite alternate;
-  -o-animation: logo2 7s 2.25s ease-in-out infinite alternate;
-  animation: logo2 7s 2.25s ease-in-out infinite alternate;
+  fill: #fff;
 }
 
 .slogan .logo2 {
@@ -2782,15 +2790,18 @@ footer.global_ft .logo svg {
 .news-item {
   position: relative;
   min-height: 320px;
-  height: 320px;
+  max-height: 0;
   overflow: hidden;
   background-color: #fff;
   padding: 2.5em 5.3125em 0;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
+  -webkit-transition: max-height 0.6s ease-in-out;
+  -o-transition: max-height 0.6s ease-in-out;
+  transition: max-height 0.6s ease-in-out;
 }
 .news-item.open {
-  height: auto;
+  max-height: 3000px;
 }
 .news-item.open .news-cnt {
   padding-bottom: 3.125em;
@@ -2805,7 +2816,7 @@ footer.global_ft .logo svg {
   width: 700px;
   margin-left: 1em;
 }
-.news-title {
+.news-cnt .news-title {
   width: 100%;
   padding-bottom: 19px;
   padding-bottom: 1.2rem;
@@ -2878,11 +2889,13 @@ footer.global_ft .logo svg {
 .aphrodite-fashion-clinic {
   width: 100%;
   height: 59px;
-  background: url('../images/iconTxt.png?1438579197') 0px -28px no-repeat;
-  padding-bottom: 19px;
-  padding-bottom: 1.2rem;
-  margin-bottom: 19px;
-  margin-bottom: 1.2rem;
+  background: url('../images/iconTxt.png?1438581682') 0px -28px no-repeat;
+  padding-bottom: 14px;
+  padding-bottom: 0.9rem;
+  margin-top: 14px;
+  margin-top: 0.9rem;
+  margin-bottom: 14px;
+  margin-bottom: 0.9rem;
   border-bottom: 4px solid #45bcb4;
 }
 
@@ -3020,6 +3033,12 @@ footer.global_ft .logo svg {
   line-height: 1.5rem;
   letter-spacing: 1px;
 }
+.txt-ft2.fz1 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
 .txt-fc1 {
   color: #45bcb4;
 }
@@ -3097,40 +3116,40 @@ footer.global_ft .logo svg {
 .icon-facebook {
   width: 95px;
   height: 28px;
-  background: url('../images/iconTxt.png?1438579197') 0px 0px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') 0px 0px no-repeat;
 }
 .icon-pixnet {
   width: 61px;
   height: 28px;
-  background: url('../images/iconTxt.png?1438579197') -96px 0px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') -96px 0px no-repeat;
 }
 .icon-line {
   width: 29px;
   height: 28px;
-  background: url('../images/iconTxt.png?1438579197') -158px 0px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') -158px 0px no-repeat;
 }
 .icon-facebook2 {
   display: block;
   width: 38px;
   height: 39px;
-  background: url('../images/iconTxt.png?1438579197') 0px -68px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') 0px -68px no-repeat;
 }
 .icon-pixnet2 {
   display: block;
   width: 33px;
   height: 39px;
-  background: url('../images/iconTxt.png?1438579197') -80px -68px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') -80px -68px no-repeat;
 }
 .icon-line2 {
   display: block;
   width: 40px;
   height: 39px;
-  background: url('../images/iconTxt.png?1438579197') -39px -68px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') -39px -68px no-repeat;
 }
 .icon-phone {
   width: 20px;
   height: 16px;
-  background: url('../images/iconTxt.png?1438579197') -189px 0px no-repeat;
+  background: url('../images/iconTxt.png?1438581682') -189px 0px no-repeat;
 }
 .icon-tri_left {
   width: 0;
