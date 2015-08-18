@@ -134,7 +134,7 @@ elseif ($get_category==3) {
         	<?php }else{ ?>
         		<li>
     		<?php }?>
-        			<a href="">檢測</a></li>
+        			<a href="service.php?category=3">檢測</a></li>
         	</ul>
         </aside>
         <section class="service_list-wrap col-xs-9">

@@ -52,51 +52,68 @@
 <section class="service_map bar">
 	<div class="wrapper">
 		<div class="container">
-			<div class="col-xs-6">
+			<div class="col-xs-4">
 				<h3>微整</h3>
-				<ul class="col-xs-3">
+				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">波尿酸</a></li>
 <li><a href="javascript:webLinkAlert1();">3D聚左旋乳酸</a></li>
 <li><a href="javascript:webLinkAlert1();">音波拉皮</a></li>
 <li><a href="javascript:webLinkAlert1();">酷爾塑平</a></li>
 				</ul>
-				<ul class="col-xs-3">
+				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">玫瑰拉提術</a></li>
 <li><a href="javascript:webLinkAlert1();">酷爾塑平</a></li>
 <li><a href="javascript:webLinkAlert1();">美白針</a></li>
 <li><a href="javascript:webLinkAlert1();">杏仁酸換膚</a></li>
 				</ul>
-				<ul class="col-xs-3">
+				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">LPG纖體雕塑</a></li>
 <li><a href="javascript:webLinkAlert1();">飛梭雷射</a></li>
 <li><a href="javascript:webLinkAlert1();">G緊雷射</a></li>
 				</ul>
-				<ul class="col-xs-3">
-					<li><a href="javascript:webLinkAlert1();"></a></li>
-				</ul>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-xs-4">
 				<h3>整形外科</h3>
-				<ul class="col-xs-3">
+				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">【眼部】割</a></li>
 <li><a href="javascript:webLinkAlert1();">【眼部】縫</a></li>
 <li><a href="javascript:webLinkAlert1();">【眼部】迷你切割</a></li>
 <li><a href="javascript:webLinkAlert1();">【眼部】眼袋</a></li>
+<li><a href="javascript:webLinkAlert1();">【美腿】</a></li>
 				</ul>
-				<ul class="col-xs-3">
+				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">【鼻】韓式</a></li>
 <li><a href="javascript:webLinkAlert1();">【鼻】GOTEX</a></li>
 <li><a href="javascript:webLinkAlert1();">【鼻】自體軟骨</a></li>
 <li><a href="javascript:webLinkAlert1();">【拉皮】內視鏡</a></li>
+<li><a href="javascript:webLinkAlert1();">【抽脂】</a></li>
 				</ul>
-				<ul class="col-xs-3">
+				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">【拉皮】5爪8爪</a></li>
 <li><a href="javascript:webLinkAlert1();">【胸部】自體</a></li>
 <li><a href="javascript:webLinkAlert1();">【胸部】內視果凍</a></li>
 				</ul>
-				<ul class="col-xs-3">
-<li><a href="javascript:webLinkAlert1();">【抽脂】</a></li>
+			</div>
+			<div class="col-xs-4">
+				<h3>檢測</h3>
+				<ul class="col-xs-4">
+<li><a href="javascript:webLinkAlert1();">【眼部】割</a></li>
+<li><a href="javascript:webLinkAlert1();">【眼部】縫</a></li>
+<li><a href="javascript:webLinkAlert1();">【眼部】迷你切割</a></li>
+<li><a href="javascript:webLinkAlert1();">【眼部】眼袋</a></li>
 <li><a href="javascript:webLinkAlert1();">【美腿】</a></li>
+				</ul>
+				<ul class="col-xs-4">
+<li><a href="javascript:webLinkAlert1();">【鼻】韓式</a></li>
+<li><a href="javascript:webLinkAlert1();">【鼻】GOTEX</a></li>
+<li><a href="javascript:webLinkAlert1();">【鼻】自體軟骨</a></li>
+<li><a href="javascript:webLinkAlert1();">【拉皮】內視鏡</a></li>
+<li><a href="javascript:webLinkAlert1();">【抽脂】</a></li>
+				</ul>
+				<ul class="col-xs-4">
+<li><a href="javascript:webLinkAlert1();">【拉皮】5爪8爪</a></li>
+<li><a href="javascript:webLinkAlert1();">【胸部】自體</a></li>
+<li><a href="javascript:webLinkAlert1();">【胸部】內視果凍</a></li>
 				</ul>
 			</div>
 		</div><!-- /.container  END  !! -->
