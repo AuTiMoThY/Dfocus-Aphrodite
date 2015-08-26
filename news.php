@@ -3,6 +3,8 @@
 	include_once INC_PATH.'headleader.php';
 	require_once INC_PATH.'aunav.php';
 
+$get_newsid = isset($_GET['newsid']) ? $_GET['newsid'] : 0;
+
 ?>
 <title>最新消息 | <?php echo PROJECT; ?></title>
 
@@ -47,7 +49,7 @@
 <main>
 <div class="wrapper">
     <div class="container">
-        <section class="news-item open">
+        <section id="newsId1" class="news-item">
         	<div class="news_block-left col">
         		<div class="news-date">2015年&emsp;07&emsp;月&emsp;01&emsp;日</div>
         		<div class="news-pic pic"><img src="<?php path_au('temp'); ?>tem-news1.jpg" alt=""></div>
@@ -64,7 +66,7 @@
         	</div>
         </section>
 
-        <section class="news-item">
+        <section id="newsId2" class="news-item">
         	<div class="news_block-left col">
         		<div class="news-date">2015年&emsp;07&emsp;月&emsp;01&emsp;日</div>
         		<div class="news-pic pic"><img src="<?php path_au('temp'); ?>tem-news2.jpg" alt=""></div>
@@ -81,7 +83,41 @@
         	</div>
         </section>
 
-        <section class="news-item">
+        <section id="newsId3" class="news-item">
+            <div class="news_block-left col">
+                <div class="news-date">2015年&emsp;07&emsp;月&emsp;01&emsp;日</div>
+                <div class="news-pic pic"><img src="<?php path_au('temp'); ?>tem-news3.jpg" alt=""></div>
+            </div>
+            <div class="news_block-right news-cnt col">
+                <h2 class="news-title">拒絕毛手毛腳！！OOO醫生讓ＭＭ們 乾淨清爽過一夏</h2>
+                <article class="editorDF">
+                    <!-- 圖文編輯器 -->
+                    <img src="<?php path_au('temp'); ?>tem3.jpg" alt="">
+                </article>
+            </div>
+            <div class="ctrl_btn js-ctrl_btn" data-open="CLOSE " data-close="OPEN ">
+                PANEL
+            </div>
+        </section>
+
+        <section id="newsId4" class="news-item">
+            <div class="news_block-left col">
+                <div class="news-date">2015年&emsp;07&emsp;月&emsp;01&emsp;日</div>
+                <div class="news-pic pic"><img src="<?php path_au('temp'); ?>tem-news1.jpg" alt=""></div>
+            </div>
+            <div class="news_block-right news-cnt col">
+                <h2 class="news-title">拒絕毛手毛腳！！OOO醫生讓ＭＭ們 乾淨清爽過一夏</h2>
+                <article class="editorDF">
+                    <!-- 圖文編輯器 -->
+                    <img src="<?php path_au('temp'); ?>tem3.jpg" alt="">
+                </article>
+            </div>
+            <div class="ctrl_btn js-ctrl_btn" data-open="CLOSE " data-close="OPEN ">
+                PANEL
+            </div>
+        </section>
+
+        <section id="newsId5" class="news-item">
         	<div class="news_block-left col">
         		<div class="news-date">2015年&emsp;07&emsp;月&emsp;01&emsp;日</div>
         		<div class="news-pic pic"><img src="<?php path_au('temp'); ?>tem-news3.jpg" alt=""></div>
@@ -98,7 +134,7 @@
         	</div>
         </section>
 
-        <section class="news-item">
+        <section id="newsId6" class="news-item">
         	<div class="news_block-left col">
         		<div class="news-date">2015年&emsp;07&emsp;月&emsp;01&emsp;日</div>
         		<div class="news-pic pic"><img src="<?php path_au('temp'); ?>tem-news1.jpg" alt=""></div>
@@ -154,18 +190,36 @@
 	include_once INC_PATH.'scriptfoot.php';
  ?>
 <script>
+    var getNewsId = <?php echo $get_newsid; ?>;
+    $(window).load(function(){
+
+    })
 $(function() {
-	// $(".news-item").
-	$(".js-ctrl_btn").click(function() {
-		if (!($(this).parent(".news-item").hasClass('open'))) {
-			// $(".news-item").removeClass('open');
-			$(this).parent(".news-item").addClass('open');
-			$(window).scrollTo($(this).parent(".news-item"), 600, {offset: -80});
-		} else{
-			$(this).parent(".news-item").removeClass('open');
-			$(window).scrollTo($(this).parent(".news-item"), 300, {offset: -80});
-		};
-	});
+    // $(".news-item").
+    $(".js-ctrl_btn").click(function() {
+        if (!($(this).parent(".news-item").hasClass('open'))) {
+            // $(".news-item").removeClass('open');
+            $(this).parent(".news-item").addClass('open');
+            $(window).scrollTo($(this).parent(".news-item"), 600, {offset: -80});
+        } else{
+            $(this).parent(".news-item").removeClass('open');
+            $(window).scrollTo($(this).parent(".news-item"), 300, {offset: -80});
+        };
+    });
+
+        if (getNewsId == 0) {
+            $(".news-item").eq(0).addClass('open');
+        }else {
+            $(".news-item.open").removeClass('open');
+            $("#newsId"+getNewsId).addClass('open');
+            $(window).delay(600).scrollTo($("#newsId"+getNewsId), 600, {offset: -80});
+        };
+        // if (!($("#newsId"+getNewsId).hasClass('open'))) {
+        //     // $(".news-item").removeClass('open');
+        //     $("#newsId"+getNewsId).addClass('open');
+        // } else{
+        //     $(".news-item").removeClass('open');
+        // };
 });
 // $(window).load(function() {
 // 	$("#bannerSlider").flexslider({

@@ -81,7 +81,7 @@ array('pic'=>'dist/images/temp/tem-pic6.jpg'),
 			<li class="banner" style="background-image: url('<?php path_au('img'); ?>banner-index2.jpg')"><a href="products_list1.php" class="index-banner hide_txt">more info</a></li>
 			<li class="banner" style="background-image: url('<?php path_au('img'); ?>banner-index3.jpg')"><a href="products_list1.php" class="index-banner hide_txt">more info</a></li>
 			<li class="banner" style="background-image: url('<?php path_au('img'); ?>banner-index4.jpg')"><a href="products_list1.php" class="index-banner hide_txt">more info</a></li>
-			<li class="banner" style="background-image: url('<?php path_au('img'); ?>banner-index5.jpg')"><a href="products_list1.php" class="index-banner hide_txt">more info</a></li>
+			<!-- <li class="banner" style="background-image: url('<?php //path_au('img'); ?>banner-index5.jpg')"><a href="products_list1.php" class="index-banner hide_txt">more info</a></li> -->
 	
 		</ul>
 	
@@ -166,27 +166,27 @@ array('pic'=>'dist/images/temp/tem-pic6.jpg'),
 				</div>
 				<div class="col-xs-8">
 					<ul class="index_news-list">
-						<li class="index_news-item" data-pic="<?php echo $news_pic_array[0]['pic']; ?>"><a href="">
+						<li class="index_news-item" data-pic="<?php echo $news_pic_array[0]['pic']; ?>"><a href="news.php?newsid=1">
 							<span class="news-title">【 女神案例 】讓心情黑白變彩色的神奇手術</span>
 							<span class="news-time">01-31-2015</span>
 						</a></li>
-						<li class="index_news-item" data-pic="<?php echo $news_pic_array[1]['pic']; ?>"><a href="">
+						<li class="index_news-item" data-pic="<?php echo $news_pic_array[1]['pic']; ?>"><a href="news.php?newsid=2">
 							<span class="news-title">【 女神案例 】可愛女變身氣質女</span>
 							<span class="news-time">11-05-2014</span>
 						</a></li>
-						<li class="index_news-item" data-pic="<?php echo $news_pic_array[2]['pic']; ?>"><a href="">
+						<li class="index_news-item" data-pic="<?php echo $news_pic_array[2]['pic']; ?>"><a href="news.php?newsid=3">
 							<span class="news-title">【 整形達人 】告別本壘板臉型</span>
 							<span class="news-time">09-28-2014</span>
 						</a></li>
-						<li class="index_news-item" data-pic="<?php echo $news_pic_array[3]['pic']; ?>"><a href="">
+						<li class="index_news-item" data-pic="<?php echo $news_pic_array[3]['pic']; ?>"><a href="news.php?newsid=4">
 							<span class="news-title">【 整形達人 】打造美型五官</span>
 							<span class="news-time">06-02-2014</span>
 						</a></li>
-						<li class="index_news-item" data-pic="<?php echo $news_pic_array[4]['pic']; ?>"><a href="">
+						<li class="index_news-item" data-pic="<?php echo $news_pic_array[4]['pic']; ?>"><a href="news.php?newsid=5">
 							<span class="news-title">【 整形達人 】 整形達人出刊-韓式嘟嘟鼻雕術+娃娃電眼放大術</span>
 							<span class="news-time">04-03-2014</span>
 						</a></li>
-						<li class="index_news-item" data-pic="<?php echo $news_pic_array[5]['pic']; ?>"><a href="">
+						<li class="index_news-item" data-pic="<?php echo $news_pic_array[5]['pic']; ?>"><a href="news.php?newsid=6">
 							<span class="news-title">【 綜藝節目 】綜藝大熱門-嘉仕美素人大集合嘍～</span>
 							<span class="news-time">03-13-2014</span>
 						</a></li>

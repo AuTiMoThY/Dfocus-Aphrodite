@@ -4,7 +4,7 @@
 <meta name="Copyright" content="<?php echo COPYRIGHT; ?>" /><!-- 版權宣告 -->
 <meta name="robots" content="index,follow">
 
-<meta name="viewport" content="width=device-width, user-scalable=yes">
+<meta name="viewport" content="width=1200, user-scalable=yes">
 <!-- Don't forget to set your site up: http://google.com/webmasters -->
 <meta name="google-site-verification" content="" />
 

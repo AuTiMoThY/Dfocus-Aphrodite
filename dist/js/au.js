@@ -38,18 +38,43 @@ function resizeBlock (){
 		$slidesLi = $(".flexslider .slides > li"),
 		$indexPage = $("body.index_page"),
 		viewPortWH = viewPortWidthHeight(),
+		viewPortW = viewPortWH.width;
 		viewPortH = viewPortWH.height;
 	var indexh1 = ((viewPortH - 67) / viewPortH) * 100;
 	var bannerh = (768 / 904) * 100;
 	var sloganh = (136 / 904) * 100;
+	var bannerPaddingBottom = (768 / 1920) * 100;
 
 	var bannerh1 = ((indexh1 - sloganh) / indexh1) * 100;
 	var sloganh1 = indexh1 - bannerh1;
 
-	$("#sec1").css('height', viewPortH - 67);
-	$("#bannerSlider").css('height', bannerh + "%");
-	$("#indexSlogan").css('height', sloganh + "%");
+	
+	
+	
 	// $slidesLi.css('height', viewPortH - 67 - );
+	if (viewPortW<600) {
+		$("#bannerSlider").css({
+			height: '0',
+			paddingBottom: bannerPaddingBottom + "%"
+		});
+		$("#bannerSlider li").css({
+			height: '0',
+			paddingBottom: bannerPaddingBottom + "%"
+		});
+		$("#indexSlogan").css('height', 110);
+		$("#sec1").css('height', 'auto');
+	}else {
+		$("#bannerSlider").css({
+			height: bannerh + "%",
+			paddingBottom: ''
+		});
+		$("#bannerSlider li").css({
+			height: '',
+			paddingBottom: ''
+		});
+		$("#indexSlogan").css('height', sloganh + "%");
+		$("#sec1").css('height', viewPortH - 67);
+	};
 }
 
 var fancyDFAuWidthHeight = function() {

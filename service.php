@@ -57,23 +57,23 @@ echo $get_category;
 <?php 
 if ($get_category==1) {
 ?>
-			<li class="col-xs-4"><a href="service.php?category=2">整形外科<br>Cosmetic Surgery</a></li>
-			<li class="col-xs-4 active"><a href="javascript:void 0;">微整<br>Micro-Cosmetic Surgery</a></li>
-			<li class="col-xs-4"><a href="service.php?category=3">檢測<br>Examination</a></li>
+			<li class="col-xs-4"><a href="service.php?category=2">整形醫療<br>Cosmetic Surgery</a></li>
+			<li class="col-xs-4 active"><a href="javascript:void 0;">微整形醫療<br>Micro-Cosmetic Surgery</a></li>
+			<li class="col-xs-4"><a href="service.php?category=3">抗衰老醫學<br>Examination</a></li>
 <?php
 }
 elseif ($get_category==2) {
 ?>
-			<li class="col-xs-4"><a href="service.php?category=1">微整<br>Micro-Cosmetic Surgery</a></li>
-			<li class="col-xs-4 active"><a href="javascript:void 0;">整形外科<br>Cosmetic Surgery</a></li>
-			<li class="col-xs-4"><a href="service.php?category=3">檢測<br>Examination</a></li>
+			<li class="col-xs-4"><a href="service.php?category=1">微整形醫療<br>Micro-Cosmetic Surgery</a></li>
+			<li class="col-xs-4 active"><a href="javascript:void 0;">整形醫療<br>Cosmetic Surgery</a></li>
+			<li class="col-xs-4"><a href="service.php?category=3">抗衰老醫學<br>Examination</a></li>
 <?php
 }
 elseif ($get_category==3) {
 ?>
-			<li class="col-xs-4"><a href="service.php?category=1">微整<br>Micro-Cosmetic Surgery</a></li>
-			<li class="col-xs-4 active"><a href="javascript:void 0;">檢測<br>Examination</a></li>
-			<li class="col-xs-4"><a href="service.php?category=2">整形外科<br>Cosmetic Surgery</a></li>
+			<li class="col-xs-4"><a href="service.php?category=1">微整形醫療<br>Micro-Cosmetic Surgery</a></li>
+			<li class="col-xs-4 active"><a href="javascript:void 0;">抗衰老醫學<br>Examination</a></li>
+			<li class="col-xs-4"><a href="service.php?category=2">整形醫療<br>Cosmetic Surgery</a></li>
 
 <?php
 }
@@ -94,7 +94,7 @@ elseif ($get_category==3) {
         	<?php }else{ ?>
         		<li class="js-item">
     		<?php }?>
-        			<a href="javascript:void 0;">微整</a>
+        			<a href="javascript:void 0;">微整形醫療</a>
 					<ul class="service_category-sub_list js-sublist">
 <li class="active"><a href="service.php?category=1&subcate=1">波尿酸</a></li>
 <li><a href="service.php?category=1&subcate=2">3D聚左旋乳酸</a></li>
@@ -113,7 +113,7 @@ elseif ($get_category==3) {
         	<?php }else{ ?>
         		<li class="js-item">
     		<?php }?>
-        			<a href="javascript:void 0;">整形外科</a>
+        			<a href="javascript:void 0;">整形醫療</a>
 					<ul class="service_category-sub_list js-sublist">
 <li><a href="service.php?category=2&subcate=1">【眼部】縫</a></li>
 <li><a href="service.php?category=2&subcate=2">【眼部】迷你切割</a></li>
@@ -130,11 +130,26 @@ elseif ($get_category==3) {
 					</ul>
         		</li>
         	<?php if ($get_category==3) {?>
-        		<li class="active">
+        		<li class="js-item active">
         	<?php }else{ ?>
-        		<li>
+        		<li class="js-item">
     		<?php }?>
-        			<a href="service.php?category=3">檢測</a></li>
+        			<a href="service.php?category=3">抗衰老醫學</a>
+					<ul class="service_category-sub_list js-sublist">
+<li><a href="service.php?category=2&subcate=1">【眼部】縫</a></li>
+<li><a href="service.php?category=2&subcate=2">【眼部】迷你切割</a></li>
+<li><a href="service.php?category=2&subcate=3">【眼部】眼袋</a></li>
+<li><a href="service.php?category=2&subcate=4">【鼻】韓式</a></li>
+<li><a href="service.php?category=2&subcate=5">【鼻】GOTEX</a></li>
+<li><a href="service.php?category=2&subcate=6">【鼻】自體軟骨</a></li>
+<li><a href="service.php?category=2&subcate=7">【拉皮】內視鏡</a></li>
+<li><a href="service.php?category=2&subcate=8">【拉皮】5爪8爪</a></li>
+<li><a href="service.php?category=2&subcate=9">【胸部】自體</a></li>
+<li><a href="service.php?category=2&subcate=10">【胸部】內視果凍</a></li>
+<li><a href="service.php?category=2&subcate=12">【抽脂】</a></li>
+<li><a href="service.php?category=2&subcate=13">【美腿】</a></li>
+					</ul>
+        		</li>
         	</ul>
         </aside>
         <section class="service_list-wrap col-xs-9">

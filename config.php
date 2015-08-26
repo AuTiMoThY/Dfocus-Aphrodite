@@ -1,4 +1,8 @@
 <?php 
+require_once 'plugin/mobiledetect/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+
 define('IMG_PATH', 'dist/images/');
 define('TEMP_PATH', 'dist/images/temp/');
 define('INC_PATH', 'dist/inc/');

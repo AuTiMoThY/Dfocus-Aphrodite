@@ -53,7 +53,7 @@
 	<div class="wrapper">
 		<div class="container">
 			<div class="col-xs-4">
-				<h3>微整</h3>
+				<h3>微整形醫療</h3>
 				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">波尿酸</a></li>
 <li><a href="javascript:webLinkAlert1();">3D聚左旋乳酸</a></li>
@@ -73,7 +73,7 @@
 				</ul>
 			</div>
 			<div class="col-xs-4">
-				<h3>整形外科</h3>
+				<h3>整形醫療</h3>
 				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">【眼部】割</a></li>
 <li><a href="javascript:webLinkAlert1();">【眼部】縫</a></li>
@@ -95,7 +95,7 @@
 				</ul>
 			</div>
 			<div class="col-xs-4">
-				<h3>檢測</h3>
+				<h3>抗衰老醫學</h3>
 				<ul class="col-xs-4">
 <li><a href="javascript:webLinkAlert1();">【眼部】割</a></li>
 <li><a href="javascript:webLinkAlert1();">【眼部】縫</a></li>
