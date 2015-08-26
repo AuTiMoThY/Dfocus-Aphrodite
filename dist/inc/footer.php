@@ -127,7 +127,7 @@
 					<?php include("dist/images/aphrodite-logo.svg"); ?>
 				</div>
 				<div class="txt-ft1 ib">
-					©2015 Aphordite Plastic Clinic All Rights Reserved<br>最佳瀏覽環境chome,safari,firefox或IE10以上
+					©2015 Aphordite Plastic Clinic All Rights Reserved<br>最佳瀏覽環境chome,safari,firefox或IE10以上<br><?php designByDFocus(); ?>
 				</div>
 			</div>
 			<div class="phone ib right">
